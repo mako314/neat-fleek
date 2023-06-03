@@ -1,10 +1,9 @@
 import React from 'react';
-import Navbar from './Navbar';
-import {FaSearch} from "react-icons/fa";
+import Navbar from './Header/Navbar';
 
 function App() {
   return (
-    <Navbar icon={<FaSearch size="28"/>} />
+    <Navbar  />
   );
 }
 
