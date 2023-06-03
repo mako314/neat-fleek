@@ -10,8 +10,11 @@ function App() {
     <div>
        {/* <Navbar  /> */}
       <ReviewList/>
-    </div>
+    
 
+    <Navbar icon={<FaSearch size="28"/>} />
+
+    </div>
   );
 }
 
