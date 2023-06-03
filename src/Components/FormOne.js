@@ -4,13 +4,14 @@ import React from 'react';
 // toggle review rating (possibly more to come)
 
 //move social media links to bottom
+//flex items-center max-w-md mx-auto
 
 function FormOne(){
 
     return(
 
-        <div> 
-            <form className="">
+        <div className = "h-screen flex items-center justify-center"> 
+            <form className="flex-auto items-center justify-center">
 
                 <label>Submission Type</label>
 
