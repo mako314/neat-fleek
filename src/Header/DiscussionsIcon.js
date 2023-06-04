@@ -1,12 +1,12 @@
-function ReviewIcon ({reviewIcon}) {
+function DiscussionsIcon ({discussionsIcon}) {
     return (
         <div>
             <span className="sidebar-icon">
-            {reviewIcon}
+                {discussionsIcon}
             </span>
         </div>
 
     )
 }
 
-export default ReviewIcon
+export default DiscussionsIcon
