@@ -1,8 +1,9 @@
 import React from 'react';
+import ReviewCards from './ReviewCards';
 
 function ReviewList(){
     return (
-        <ul className="cards">{/* render PlantCards components in here */}</ul>
+        <ul className="cards">{<ReviewCards/>}</ul>
     )
 }
 
