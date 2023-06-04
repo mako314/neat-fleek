@@ -10,8 +10,6 @@ function App() {
       <Navbar  />
       <ReviewList/>
     </div>
-
-  );
-}
+  )
 
 export default App;
