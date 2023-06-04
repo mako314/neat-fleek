@@ -1,9 +1,7 @@
 function ReviewIcon ({reviewIcon}) {
     return (
-        <div>
-            <span className="sidebar-icon">
+        <div className="sidebar-icon">
             {reviewIcon}
-            </span>
         </div>
 
     )
