@@ -1,0 +1,279 @@
+{
+    "reviews": [
+      {
+        "id" : 1,
+        "author": "Emma Thompson",
+        "socialMedia": "@EmmazingAdventure",
+        "gameTitle": "Genshin Impact",
+        "developer": "miHoYo",
+        "system": "Available on PC, PlayStation, and Mobile",
+        "tags": ["Action RPG", "Open World"],
+        "review": "Genshin Impact is a breathtaking action RPG that takes players on a mesmerizing journey through the enchanting world of Teyvat. As an adventurer, I was captivated by the stunning visuals, immersive gameplay, and the vast open-world waiting to be explored...",
+        "rating": 9.5
+      },
+      {
+        "id" : 2,
+        "author": "Benjamin Parker",
+        "socialMedia": "@WebSlingerBen",
+        "gameTitle": "Marvel's Spider-Man: Miles Morales",
+        "developer": "Insomniac Games",
+        "system": "PlayStation",
+        "tags": ["Action-Adventure", "Superhero"],
+        "review": "Marvel's Spider-Man: Miles Morales is a thrilling action-adventure game that puts players in the shoes of the iconic web-slinger. Swing through the streets of New York City, unleash spectacular powers, and take on epic villains. The game's engaging story, fluid combat, and impressive visuals make it a must-play for any Spider-Man fan.",
+        "rating": 9.2
+      },
+      {
+        "id" : 3,
+        "author": "Emma Thompson",
+        "socialMedia": "@EmmazingAdventure",
+        "gameTitle": "Animal Crossing: New Horizons",
+        "developer": "Nintendo",
+        "system": "Nintendo Switch",
+        "tags": ["Life Simulation", "Social"],
+        "review": "Animal Crossing: New Horizons is a charming life simulation game that invites players to create their own virtual paradise on a deserted island. With its relaxing gameplay, adorable animal villagers, and endless customization options, this game provides a delightful escape from reality. It's a joy to play and perfect for those seeking a peaceful and heartwarming gaming experience.",
+        "rating": 9.6
+      },
+      {
+        "id" : 4,
+        "author": "Oliver Reed",
+        "socialMedia": "@CraftingOliver",
+        "gameTitle": "Super Mario 3D World + Bowser's Fury",
+        "developer": "Nintendo",
+        "system": "Nintendo Switch",
+        "tags": ["Platformer", "Adventure"],
+        "review": "Super Mario 3D World + Bowser's Fury is a fantastic platformer that offers a delightful mix of traditional Mario gameplay and exciting new additions. The levels are creatively designed, the multiplayer mode is a blast to play with friends, and Bowser's Fury provides a thrilling open-world experience. It's a must-have for all Mario fans!",
+        "rating": 9.4
+      },
+      {
+        "id" : 5,
+        "author": "Oliver Reed",
+        "socialMedia": "@CraftingOliver",
+        "gameTitle": "Minecraft",
+        "developer": "Mojang Studios",
+        "system": "Available on multiple platforms",
+        "tags": ["Sandbox", "Adventure"],
+        "review": "Minecraft is a sandbox game that allows players to unleash their creativity and build anything they can imagine. Whether you want to construct magnificent structures or embark on thrilling adventures, this game offers endless possibilities. Its simple yet addictive gameplay and vibrant community make it a true gaming masterpiece.",
+        "rating": 9.7
+      },
+      {
+        "id" : 6,
+        "author": "Penelope Adams",
+        "socialMedia": "@MercenaryNightmare",
+        "gameTitle": "Resident Evil 4 Remake",
+        "developer": "Capcom",
+        "system": "Available on multiple platforms",
+        "tags": ["Survival Horror", "Action"],
+        "review": "Resident Evil 4 Remake brings back the iconic survival horror game with stunning visuals and enhanced gameplay. As a fan of the original, I was thrilled to revisit the intense atmosphere and face the terrifying enemies once again. The game strikes a perfect balance between suspense and action, making it a must-play for both new and returning players.",
+        "rating": 9.3
+      },
+      {
+        "id" : 7,
+        "author": "Jeffery Adams",
+        "socialMedia": "@NerfThisPls",
+        "gameTitle": "Overwatch 2",
+        "developer": "Blizzard Entertainment",
+        "system": "Available on PC, PlayStation, Xbox, and Nintendo Switch",
+        "tags": ["Team-Based Shooter", "Multiplayer"],
+        "review": "Overwatch is a fast-paced team-based shooter that offers exhilarating gameplay and a diverse cast of heroes. Whether you prefer to take on the role of a tank, damage dealer, or support, there's a character to suit every playstyle. The game's vibrant visuals, strategic gameplay, and constant updates make it a highly addictive and competitive experience.",
+        "rating": 9.1
+      },
+      {
+        "id" : 8,
+        "author": "Henry Anderson",
+        "socialMedia": "@HenryRoyale",
+        "gameTitle": "Apex Legends",
+        "developer": "Respawn Entertainment",
+        "system": "Available on PC, PlayStation, Xbox, and Nintendo Switch",
+        "tags": ["Battle Royale", "First-Person Shooter"],
+        "review": "Apex Legends is a thrilling battle royale game that offers intense firefights, strategic gameplay, and a roster of unique characters known as Legends. The fast-paced matches and teamwork required to secure victory make every game exhilarating. With regular updates and a dedicated community, Apex Legends continues to deliver exciting experiences in the battle royale genre.",
+        "rating": 9.0
+      },
+      {
+        "id" : 9,
+        "author": "Natalie Evans",
+        "socialMedia": "@AdventuresWithNatalie",
+        "gameTitle": "The Legend of Zelda: Breath of the Wild",
+        "developer": "Nintendo",
+        "system": "Nintendo Switch",
+        "tags": ["Action-Adventure", "Open World"],
+        "review": "The Legend of Zelda: Breath of the Wild is a masterpiece that pushes the boundaries of open-world exploration and delivers an unforgettable adventure. From the breathtaking landscapes to the immersive gameplay and captivating story, every aspect of this game is meticulously crafted. It's a must-play for any gaming enthusiast.",
+        "rating": 9.8
+      },
+      {
+        "id" : 10,
+        "author": "Henry Anderson",
+        "socialMedia": "@HenryRoyale",
+        "gameTitle": "Fortnite",
+        "developer": "Epic Games",
+        "system": "Available on multiple platforms",
+        "tags": ["Battle Royale", "Third-Person Shooter"],
+        "review": "Fortnite revolutionized the battle royale genre and became a cultural phenomenon. With its vibrant visuals, innovative building mechanics, and regular updates, the game offers endless fun and excitement. Whether you're dropping into solo matches or teaming up with friends, Fortnite never fails to deliver thrilling and unpredictable gameplay experiences.",
+        "rating": 8.9
+      },
+      {
+        "id" : 11,
+        "author": "Milo Harrington",
+        "socialMedia": "@MiloMental",
+        "gameTitle": "League of Legends",
+        "developer": "Riot Games",
+        "system": "Available on PC",
+        "tags": ["MOBA", "Multiplayer"],
+        "review": "League of Legends is a highly competitive multiplayer online battle arena (MOBA) game that offers strategic depth and intense team-based gameplay. With a vast roster of unique champions, each with their own playstyle, there's always something new to discover. The game's esports scene and dedicated community make it a global phenomenon.",
+        "rating": 3.8
+      },
+      {
+        "id" : 12,
+        "author": "Bella Johnson",
+        "socialMedia": "@GoalDiggerBella",
+        "gameTitle": "FIFA 23",
+        "developer": "EA Sports",
+        "system": "Available on multiple platforms",
+        "tags": ["Sports", "Soccer"],
+        "review": "FIFA 23 is the ultimate soccer simulation game that captures the excitement and thrill of the sport. With realistic player animations, immersive gameplay, and various game modes, FIFA 23 offers an authentic soccer experience. Whether you're playing solo or competing against friends, this game is a must-have for any soccer fan.",
+        "rating": 8.7
+      },
+      {
+        "id" : 13,
+        "author": "Bella Johnson",
+        "socialMedia": "@GoalDiggerBella",
+        "gameTitle": "Madden 23",
+        "developer": "EA Sports",
+        "system": "Available on multiple platforms",
+        "tags": ["Sports", "Football"],
+        "review": "Madden 23 is a must-play for any football fan. With its realistic graphics, immersive gameplay, and comprehensive features, it offers an authentic NFL experience. Whether you're managing your own franchise or competing in thrilling matches, Madden 23 delivers the excitement and intensity of the gridiron.",
+        "rating": 8.6
+      },
+      {
+        "id" : 14,
+        "author": "Penelope Adams",
+        "socialMedia": "@MercenaryNightmare",
+        "gameTitle": "Escape from Tarkov",
+        "developer": "Battlestate Games",
+        "system": "PC",
+        "tags": ["First-Person Shooter", "Survival"],
+        "review": "Escape from Tarkov is a hardcore first-person shooter that provides a thrilling and immersive survival experience. The game's realistic gunplay, intense atmosphere, and complex gameplay mechanics create an unparalleled sense of tension and satisfaction. It's a game that rewards patience, strategy, and precise execution.",
+        "rating": 8.5
+      },
+      {
+        "id" : 15,
+        "author": "Jacob Stone",
+        "socialMedia": "@HunterGuru",
+        "gameTitle": "Monster Hunter Rise",
+        "developer": "Capcom",
+        "system": "Nintendo Switch",
+        "tags": ["Action", "RPG"],
+        "review": "Monster Hunter Rise is an exhilarating action RPG that pits players against powerful monsters in a vibrant and dynamic world. The game's deep combat system, breathtaking environments, and cooperative multiplayer make it a must-play for fans of the series and newcomers alike. Prepare for epic battles and unforgettable adventures!",
+        "rating": 8.4
+      },
+      {
+        "id" : 16,
+        "author": "Alexander Reed",
+        "socialMedia": "@OldiesButGoldies",
+        "gameTitle": "Ratchet & Clank",
+        "developer": "Insomniac Games",
+        "system": "PlayStation",
+        "tags": ["Action-Adventure", "Platformer"],
+        "review": "Ratchet & Clank is a fantastic action-adventure platformer that combines fast-paced combat, imaginative weapons, and humorous storytelling. The game's stunning visuals and seamless gameplay make it a visual treat and a joy to play. Join Ratchet and his robotic companion Clank on their intergalactic adventures for an unforgettable experience.",
+        "rating": 8.3
+      },
+      {
+        "id" : 17,
+        "author": "Alexander Reed",
+        "socialMedia": "@OldiesButGoldies",
+        "gameTitle": "Sly Cooper 3",
+        "developer": "Sucker Punch Productions",
+        "system": "PlayStation",
+        "tags": ["Stealth", "Platformer"],
+        "review": "Sly Cooper 3 is a charming stealth platformer that follows the adventures of the suave and cunning raccoon thief. With its engaging storyline, clever gameplay mechanics, and colorful characters, the game offers a delightful experience for players of all ages. Sneak through beautifully designed levels, pull off daring heists, and outsmart your enemies.",
+        "rating": 8.2
+      },
+      {
+        "id" : 18,
+        "author": "Lucas Carter",
+        "socialMedia": "@VirtualVagabond",
+        "gameTitle": "The Witcher 3: Wild Hunt",
+        "developer": "CD Projekt",
+        "system": "Available on multiple platforms",
+        "tags": ["Action RPG", "Open World"],
+        "review": "The Witcher 3: Wild Hunt is an epic action RPG that immerses players in a rich and immersive fantasy world. As Geralt of Rivia, a monster hunter for hire, you'll embark on a captivating journey filled with memorable characters, intricate quests, and breathtaking landscapes. With its compelling story, deep gameplay mechanics, and stunning visuals, this game is a true masterpiece.",
+        "rating": 8.1
+      },
+      {
+        "id" : 19,
+        "author": "Milo Harrington",
+        "socialMedia": "@MiloMental",
+        "gameTitle": "Valorant",
+        "developer": "Riot Games",
+        "system": "PC",
+        "tags": ["First-Person Shooter", "Tactical"],
+        "review": "Valorant is a highly competitive tactical shooter that combines precise gunplay with unique agent abilities. The game's strategic gameplay, teamwork-oriented mechanics, and intense matches make it a must-play for fans of the genre. With its regular updates and esports scene, Valorant offers endless opportunities for thrilling gameplay and skillful plays.",
+        "rating": 8.0
+      },
+      {
+        "id" : 20,
+        "author": "Sophie Williams",
+        "socialMedia": "@CyberSophie",
+        "gameTitle": "CyberPunk 2077",
+        "developer": "CD Projekt",
+        "system": "Available on multiple platforms",
+        "tags": ["Action RPG", "Open World"],
+        "review": "CyberPunk 2077 is an ambitious open-world RPG set in a dystopian future. Despite its initial technical issues, the game offers a compelling storyline, immersive world, and a wide range of choices that impact the narrative. With its stunning visuals and memorable characters, CyberPunk 2077 is a captivating journey through a dark and futuristic city.",
+        "rating": 7.9
+      },
+      {
+        "id" : 21,
+        "author": "Lucas Carter",
+        "socialMedia": "@VirtualVagabond",
+        "gameTitle": "Red Dead Redemption 2",
+        "developer": "Rockstar Games",
+        "system": "Available on multiple platforms",
+        "tags": ["Action-Adventure", "Open World"],
+        "review": "Red Dead Redemption 2 is a monumental open-world game that takes players on an unforgettable journey through the Wild West. With its breathtaking visuals, compelling story, and immersive gameplay, the game offers a truly immersive experience. From intense gunfights to captivating side quests, every moment in this game feels meticulously crafted.",
+        "rating": 9.5
+      },
+      {
+        "id" : 22,
+        "author": "Lucas Carter",
+        "socialMedia": "@VirtualVagabond",
+        "gameTitle": "GTA 5",
+        "developer": "Rockstar Games",
+        "system": "Available on multiple platforms",
+        "tags": ["Action-Adventure", "Open World"],
+        "review": "GTA 5 is an iconic open-world game that continues to captivate players with its vast and immersive world, engaging story, and thrilling gameplay. Whether you're causing chaos in the streets of Los Santos or embarking on epic heists, the game offers endless opportunities for fun and mayhem. It's a must-play for fans of the series and open-world enthusiasts.",
+        "rating": 9.3
+      },
+      {
+        "id" : 23,
+        "author": "Sophie Williams",
+        "socialMedia": "@CyberSophie",
+        "gameTitle": "Star Wars Jedi: Survivor",
+        "developer": "EA",
+        "system": "Available on multiple platforms",
+        "tags": ["Action", "Adventure"],
+        "review": "Star Wars Jedi: Survivor is an immersive action-adventure game that puts players in the shoes of a Jedi on the run. Set in the expansive Star Wars universe, the game offers thrilling lightsaber combat, challenging puzzles, and a compelling story. Whether you're exploring ancient temples or battling against the forces of the dark side, this game delivers an epic Star Wars experience.",
+        "rating": 8.9
+      },
+      {
+        "id" : 24,
+        "author": "Dylan Parker",
+        "socialMedia": "@PunchPerfect",
+        "gameTitle": "Super Smash Bros. Ultimate",
+        "developer": "Nintendo",
+        "system": "Nintendo Switch",
+        "tags": ["Fighting", "Multiplayer"],
+        "review": "Super Smash Bros. Ultimate is a celebration of gaming history, bringing together an extensive roster of beloved characters from various franchises. With its fast-paced gameplay, diverse stages, and multiplayer mayhem, the game offers endless fun for parties or competitive matches. Smash your way to victory and create unforgettable gaming moments.",
+        "rating": 9.2
+      },
+      {
+        "id" : 25,
+        "author": "Dylan Parker",
+        "socialMedia": "@PunchPerfect",
+        "gameTitle": "Street Fighter 6",
+        "developer": "Capcom",
+        "system": "Available on multiple platforms",
+        "tags": ["Fighting", "Multiplayer"],
+        "review": "Street Fighter 6 is a highly anticipated fighting game that builds upon the beloved franchise with new mechanics, stunning visuals, and a diverse roster of fighters. With its deep gameplay mechanics and competitive multiplayer, it offers intense and strategic battles for both casual and hardcore players. Get ready to unleash your fighting skills and prove your worth on the global stage.",
+        "rating": 9.1
+      }
+    ]
+  }
