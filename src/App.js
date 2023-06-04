@@ -5,11 +5,12 @@ import FormOne from './Components/FormOne';
 
 function App() {
   return (
-    
     <div>
       <Navbar  />
       <ReviewList/>
     </div>
-  )
+
+  );
+}
 
 export default App;
