@@ -1,12 +1,9 @@
 import React from 'react';
-import FormOne from './Components/FormOne';
+import Navbar from './Header/Navbar';
 
 function App() {
   return (
-    <div>
-      
-    </div>
-
+    <Navbar  />
   );
 }
 
