@@ -1,6 +1,7 @@
 import ReviewIcon from "./ReviewIcon";
 import Search from "./Search"
-import {FaSearch, FaFileAlt, FaHome} from "react-icons/fa";
+import GuidesIcon from "./GuidesIcon"
+import {FaSearch, FaFileAlt, FaHome, FaDraftingCompass} from "react-icons/fa";
 
 function Navbar () {
     return (
@@ -8,10 +9,12 @@ function Navbar () {
      <Search searchIcon={<FaSearch size="28" color="red" />}/> 
      <HomeIcon homeIcon={<FaHome size="28" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
+     <GuidesIcon guidesIcon={<FaDraftingCompass size="28" />} />
     </div>
     )
 }
 
+//This is our Home Icon Component
 function HomeIcon ({homeIcon}) {
     return (
         <div className="sidebar-icon">
