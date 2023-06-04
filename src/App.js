@@ -3,7 +3,12 @@ import Navbar from './Header/Navbar';
 
 function App() {
   return (
-    <Navbar  />
+    
+    <div>
+      <Navbar  />
+      <ReviewList/>
+    </div>
+
   );
 }
 
