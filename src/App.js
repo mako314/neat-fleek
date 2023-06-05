@@ -8,7 +8,7 @@ import FormOne from './Components/FormOne';
 function App() {
   return (
     <div>
-      <Navbar  />
+       {/* <Navbar  /> */}
       <ReviewList/>
     </div>
 
