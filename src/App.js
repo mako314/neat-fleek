@@ -8,7 +8,7 @@ import Navbar from './Header/Navbar';
 function App() {
   return (
     <div>
-       <Navbar  />
+       {/* <Navbar  /> */}
       <ReviewList/>
     </div>
 
