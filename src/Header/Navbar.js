@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
 import {FaSearch, FaFileAlt, FaHome, FaComments } from "react-icons/fa";
 
+
 //The css for the icons exist in the index.css file. I gave it a class name "sidebar-icon" and applied the styles via @apply in tailwind!
 function Navbar () {
     return (
@@ -16,6 +17,8 @@ function Navbar () {
      <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
      <GuidesIcon />
      <DiscussionsIcon discussionsIcon={<FaComments size="28"/>} />
+     <Search searchIcon={<FaSearch size="28" color="red" />}/> 
+     <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
     </div>
     )
 }
