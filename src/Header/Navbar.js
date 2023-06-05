@@ -14,7 +14,7 @@ function Navbar () {
      <Search searchIcon={<FaSearch size="28" color="red" />}/> 
      <HomeIcon homeIcon={<FaHome size="28" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
-     <GuidesIcon guidesIcon={<FaDraftingCompass size="28" />} />
+     <GuidesIcon />
      <DiscussionsIcon discussionsIcon={<FaComments size="28"/>} />
     </div>
     )
