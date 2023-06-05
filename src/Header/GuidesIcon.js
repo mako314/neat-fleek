@@ -4,6 +4,7 @@ function GuidesIcon ({guidesIcon}) {
             <span className="sidebar-icon">
             {guidesIcon} 
             </span>
+            <p className="inline-block"></p>
         </div>
         
     )
