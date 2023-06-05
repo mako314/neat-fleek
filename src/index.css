@@ -7,9 +7,16 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white ;
   }
-  .logo{
-    @apply relative flex items-center justify-center h-60 w-60 mt-2 mb-2 mx-auto hover:bg-slate-50 ;
+  
+  .logo {
+    @apply relative flex items-center justify-center h-60 w-60 mt-2 mb-2 mx-auto ;
+  }
+}
 
+.iconSpan {
+  text-align: center;
+  max-width: 100% ;
+}
 
 * {
   margin: 0;
@@ -17,11 +24,6 @@
   box-sizing: border-box;
 }
 
-
-@layer components {
-  .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white ;
-  }
 .body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -75,8 +77,3 @@
   }
 }
 
-@layer components {
-  .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white ;
-  }
-}
