@@ -27,7 +27,7 @@ function ReviewList(){
         />
       ))
     return (
-        <ul className="cards">{<ReviewCards/>}</ul>
+        <ul className="cards">{mappedGameReviews}</ul>
     )
 }
 
