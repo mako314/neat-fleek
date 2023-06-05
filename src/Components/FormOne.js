@@ -34,10 +34,7 @@ function FormOne({gameReviews, setGameReviews}){
 
     .then(resp => resp.json())
     .then(newReview => setGameReviews([...gameReviews, newReview]))
-
     }
-
-
 
     return(
 
