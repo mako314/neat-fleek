@@ -15,26 +15,28 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
 
     
     return (
+
   
-<div className="grid-container">
-    <div class="grid-item">
-    <li className="card">
-      <img src={image} alt={gameTitle} />
 
-      <h4>{gameTitle}</h4>
-      <h5>{author}</h5>
-      <h5>{socialMedia}</h5>
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
 
-      <p>{rating} out of 10.</p>
+  <img class="object-scale-down h-48 w-96" src={image} alt={gameTitle}/>
 
-      <p>{review}</p>
+  <div class="px-6 py-4">
+    <h1 class="font-bold text-xl mb-2">{gameTitle}</h1>
+    <h2 class="font-style: italic font font-semibold text-xs mb-2">{author}</h2>
+    <h3 class ="font-style: italic font font-semibold text-xs mb-2" >{socialMedia}</h3>
+    <p class="text-gray-700 text-base">
+        Review Content Here
+    </p>
+  </div>
 
-      <p>Developed by {developer}, available on {system} </p>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+  </div>
 
-      <span className="primary">{tags}</span>
-
-    </li>
-    </div>
 </div>
     )
 }
