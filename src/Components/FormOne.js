@@ -6,7 +6,9 @@ import React from 'react';
 //move social media links to bottom
 //flex items-center max-w-md mx-auto
 
-function FormOne(){
+function FormOne({gameReviews, setGameReviews}){
+    
+    console.log(gameReviews)
 
     function handleSubmit(e){
     e.preventDefault()
@@ -21,7 +23,17 @@ function FormOne(){
         system: e.target.systems.value,
         rating: e.target.rating.value
     }
+    fetch('http://localhost:3000/reviews', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body : JSON.stringify(newReview)
+    })
 
+    .then(resp => resp.json())
+    .then(newReview => setGameReviews([...gameReviews, newReview]))
 
     }
 
@@ -50,6 +62,12 @@ function FormOne(){
                     Game Title
                     <input type="text" name="title" placeholder="title"/>
                 </label>
+
+                <label>
+                    Image
+                    <input type="text" name="image" placeholder="image link"/>
+                </label>
+
                 <label>
                     Developer
                     <input type="text" name="developer" placeholder="developer"/>
@@ -100,6 +118,8 @@ function FormOne(){
                     Social Media Links
                     <input type="text" name="socialmedia" placeholder="social-media"/>
                 </label>
+
+                <button type="submit">Add Review</button>
 
             </form>
         </div>

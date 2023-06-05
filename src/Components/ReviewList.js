@@ -31,8 +31,8 @@ function ReviewList(){
       
     return (
       <>
+        <FormOne  gameReviews = {gameReviews} setGameReviews={setGameReviews}/>
         <ul className="cards">{mappedGameReviews}</ul>
-        <FormOne setGameReviews={setGameReviews}/>
       </>
     )
 }
