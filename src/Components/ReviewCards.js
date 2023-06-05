@@ -1,6 +1,17 @@
 import React from 'react';
 
-function ReviewCards(){
+// key={gameReview.id}
+// author={gameReview.author}
+// socialMedia={gameReview.socialMedia}
+// image={gameReview.image}
+// gameTitle={gameReview.gameTitle}
+// tags={gameReview.tags}
+// review={gameReview.review}
+// developer={gameReview.developer}
+// system={gameReview.system}
+// rating={gameReview.rating}
+
+function ReviewCards({key, author, socialMedia, image, gameTitle, tags, review, developer, system, rating}){
 
     
     return (
@@ -8,13 +19,19 @@ function ReviewCards(){
 <div className="">
 
 <li className="card">
-      <img src="https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc" alt="game name" />
+      <img src={image} alt={gameTitle} />
 
-      <h4> Genshin Impact</h4>
+      <h4>{gameTitle}</h4>
+      <h5>{author}</h5>
+      <h5>{socialMedia}</h5>
 
-      <p>Genshin Impact, developed by miHoYo, is a visually stunning and expansive open-world action role-playing game that has taken the gaming world by storm. {"review"}</p>
+      <p>{rating} out of 10.</p>
 
-      <span className="primary">Tags</span>
+      <p>{review}</p>
+
+      <p>Developed by {developer}, available on {system} </p>
+
+      <span className="primary">{tags}</span>
 
     </li>
 </div>
