@@ -1,26 +1,12 @@
-import React, {useState}  from "react"
-import {FaDraftingCompass} from "react-icons/fa";
-
-function GuidesIcon () {
-  const  [mouseOver, setMouseOver] = useState(true)
-  const guidesIcon = <FaDraftingCompass size="28" />
-  const guideTextContent = <span> Guides </span>
-
-  function handleMouseOver () {
-setMouseOver(!mouseOver)
-  }
-  
-  function handleMouseOut () {
-setMouseOver(!mouseOver)
-  }
-  const guidePreview = <span className="sidebar-icon" >{guidesIcon}</span>
-  const guideText = <span className="iconSpan" >{guideTextContent}</span>
+function GuidesIcon ({guidesIcon}) {
     return  (
-        <div className="iconSpan" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-        <span>
-        {mouseOver ? guidePreview : guideText }
-        </span>
+        <div>
+            <span className="sidebar-icon">
+            {guidesIcon} 
+            </span>
+            <p className="inline-block"></p>
         </div>
+        
     )
 }
 
