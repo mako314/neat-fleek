@@ -34,7 +34,10 @@ function FormOne({gameReviews, setGameReviews}){
 
     .then(resp => resp.json())
     .then(newReview => setGameReviews([...gameReviews, newReview]))
+
     }
+
+
 
     return(
 
@@ -115,8 +118,6 @@ function FormOne({gameReviews, setGameReviews}){
                     Social Media Links
                     <input type="text" name="socialmedia" placeholder="social-media"/>
                 </label>
-
-                <button type="submit">Add Review</button>
 
             </form>
         </div>
