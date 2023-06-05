@@ -10,7 +10,7 @@ function App() {
     <div>
        {/* <Navbar  /> */}
       {/* <ReviewList/> */}
-      {/* <FormOne/> */}
+       <FormOne/> 
     </div>
 
   );

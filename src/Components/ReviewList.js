@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import ReviewCards from './ReviewCards';
+import FormOne from './FormOne';
 
 function ReviewList(){
     const [gameReviews, setGameReviews] = useState([])
+    //use a state variable here or take this one 
 
     useEffect(() =>{
         fetch("http://localhost:3000/reviews")
@@ -28,7 +30,10 @@ function ReviewList(){
       ))
       
     return (
+      <>
         <ul className="cards">{mappedGameReviews}</ul>
+        <FormOne setGameReviews={setGameReviews}/>
+      </>
     )
 }
 

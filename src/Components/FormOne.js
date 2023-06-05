@@ -8,10 +8,31 @@ import React from 'react';
 
 function FormOne(){
 
+    function handleSubmit(e){
+    e.preventDefault()
+    const newReview = {
+        author: e.target.name.value,
+        socialMedia:e.target.socialmedia.value,
+        image: e.target.image.value,
+        gameTitle: e.target.title.value,
+        tags: e.target.value,
+        review: e.target.review.value,
+        developer: e.target.developer.value,
+        system: e.target.systems.value,
+        rating: e.target.rating.value
+    }
+
+
+    }
+
+
+
     return(
 
         <div className = "h-screen flex items-center justify-center"> 
-            <form className="flex-auto items-center justify-center">
+            <form className="flex-auto items-center justify-center"
+            onSubmit={handleSubmit}
+            >
 
                 <label>Submission Type</label>
 
@@ -58,14 +79,18 @@ function FormOne(){
                     <input type= "radio" name="platformer" value="platformer"/>
                     <input type= "radio" name="survival-and-horror" value="survival-and-horror"/>
                     <input type= "radio" name="battle-royale-games" value="battle-royale-games"/>
-                    <input type= "radio" name="fighting-games" value="fighting-games" placeHolder="fighting games"/>
+                    <input type= "radio" name="fighting-games" value="fighting-games"/>
 
                 </label>
+
+                <label> Rating: </label>
+                    <input type="text" name="rating" placeholder="Rating"/>
+
                 <label>
-                    Review or Rating
+                    Review
                     <textarea
-                        name="review-or-rating"
-                        defaultValue="Review or rating"
+                        name="review"
+                        defaultValue="Review"
                         rows={4}
                         cols={40}
                     />
@@ -73,7 +98,7 @@ function FormOne(){
 
                 <label>
                     Social Media Links
-                    <input type="text" name="social-media" placeholder="social-media"/>
+                    <input type="text" name="socialmedia" placeholder="social-media"/>
                 </label>
 
             </form>
