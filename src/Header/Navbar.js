@@ -4,7 +4,7 @@ import GuidesIcon from "./GuidesIcon"
 import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
 import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
-import {FaSearch, FaFileAlt, FaHome, FaDraftingCompass, FaComments } from "react-icons/fa";
+import {FaSearch, FaFileAlt, FaHome, FaComments } from "react-icons/fa";
 
 //The css for the icons exist in the index.css file. I gave it a class name "sidebar-icon" and applied the styles via @apply in tailwind!
 function Navbar () {
