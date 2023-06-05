@@ -10,13 +10,22 @@ function ReviewList(){
         .then(data => setGameReviews(data))
       },[])
 
-      console.log(gameReviews)
+      // console.log(gameReviews)
 
       const mappedGameReviews = gameReviews.map((gameReview) =>(
-        <ReviewCards/>
+        <ReviewCards
+        key={gameReview.id}
+        author={gameReview.author}
+        socialMedia={gameReview.socialMedia}
+        image={gameReview.image}
+        gameTitle={gameReview.gameTitle}
+        tags={gameReview.tags}
+        review={gameReview.review}
+        developer={gameReview.developer}
+        system={gameReview.system}
+        rating={gameReview.rating}
+        />
       ))
-
-
     return (
         <ul className="cards">{<ReviewCards/>}</ul>
     )
