@@ -11,14 +11,14 @@ import React from 'react';
 // system={gameReview.system}
 // rating={gameReview.rating}
 
-function ReviewCards({key, author, socialMedia, image, gameTitle, tags, review, developer, system, rating}){
+function ReviewCards({author, socialMedia, image, gameTitle, tags, review, developer, system, rating}){
 
     
     return (
   
-<div className="">
-
-<li className="card">
+<div className="grid-container">
+    <div class="grid-item">
+    <li className="card">
       <img src={image} alt={gameTitle} />
 
       <h4>{gameTitle}</h4>
@@ -34,9 +34,9 @@ function ReviewCards({key, author, socialMedia, image, gameTitle, tags, review, 
       <span className="primary">{tags}</span>
 
     </li>
+    </div>
 </div>
     )
 }
 
 export default ReviewCards;
-

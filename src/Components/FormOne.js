@@ -58,7 +58,7 @@ function FormOne(){
                     <input type= "radio" name="platformer" value="platformer"/>
                     <input type= "radio" name="survival-and-horror" value="survival-and-horror"/>
                     <input type= "radio" name="battle-royale-games" value="battle-royale-games"/>
-                    <input type= "radio" name="fighting-games" value="fighting-games"/>
+                    <input type= "radio" name="fighting-games" value="fighting-games" placeHolder="fighting games"/>
 
                 </label>
                 <label>
@@ -83,3 +83,9 @@ function FormOne(){
 
 
 export default FormOne;
+
+
+// <label>
+//   <input type=“radio” name=“role-playing”>
+//   Role Playing
+// </label>

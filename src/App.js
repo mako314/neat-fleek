@@ -9,7 +9,8 @@ function App() {
   return (
     <div>
        {/* <Navbar  /> */}
-      <ReviewList/>
+      {/* <ReviewList/> */}
+      {/* <FormOne/> */}
     </div>
 
   );

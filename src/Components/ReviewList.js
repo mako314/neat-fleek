@@ -26,6 +26,7 @@ function ReviewList(){
         rating={gameReview.rating}
         />
       ))
+      
     return (
         <ul className="cards">{mappedGameReviews}</ul>
     )
