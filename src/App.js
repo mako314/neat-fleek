@@ -3,6 +3,7 @@ import ReviewCards from './Components/ReviewCards';
 import ReviewList from './Components/ReviewList';
 import FormOne from './Components/FormOne';
 import Navbar from './Header/Navbar';
+import Home from './Home';
 
 function App() {
 
@@ -21,8 +22,10 @@ const filteredReviews = gameReviews.filter((data) =>(
 ))
 
   return (
+    
     <div className="homebase">
        <Navbar setSearchTerm={setSearchTerm} />
+       <Home/>
       <ReviewList gameReviews={filteredReviews}  />
     </div>
   );
