@@ -20,6 +20,7 @@ function Navbar () {
     )
 }
 
+
 //This is our Home Icon Component
 function HomeIcon ({homeIcon}) {
     return (
@@ -28,8 +29,5 @@ function HomeIcon ({homeIcon}) {
         </div>
     )
 }
-
-
-
 
 export default Navbar

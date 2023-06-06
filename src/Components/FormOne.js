@@ -6,12 +6,45 @@ import React from 'react';
 //move social media links to bottom
 //flex items-center max-w-md mx-auto
 
-function FormOne(){
+function FormOne({gameReviews, setGameReviews}){
+    
+    console.log(gameReviews)
+
+    function handleSubmit(e){
+    e.preventDefault()
+    const newReview = {
+        author: e.target.name.value,
+        socialMedia:e.target.socialmedia.value,
+        image: e.target.image.value,
+        gameTitle: e.target.title.value,
+        tags: e.target.value,
+        review: e.target.review.value,
+        developer: e.target.developer.value,
+        system: e.target.systems.value,
+        rating: e.target.rating.value
+    }
+    fetch('http://localhost:3000/reviews', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body : JSON.stringify(newReview)
+    })
+
+    .then(resp => resp.json())
+    .then(newReview => setGameReviews([...gameReviews, newReview]))
+
+    }
+
+
 
     return(
 
         <div className = "h-screen flex items-center justify-center"> 
-            <form className="flex-auto items-center justify-center">
+            <form className="flex-auto items-center justify-center"
+            onSubmit={handleSubmit}
+            >
 
                 <label>Submission Type</label>
 
@@ -29,6 +62,12 @@ function FormOne(){
                     Game Title
                     <input type="text" name="title" placeholder="title"/>
                 </label>
+
+                <label>
+                    Image
+                    <input type="text" name="image" placeholder="image link"/>
+                </label>
+
                 <label>
                     Developer
                     <input type="text" name="developer" placeholder="developer"/>
@@ -61,11 +100,15 @@ function FormOne(){
                     <input type= "radio" name="fighting-games" value="fighting-games"/>
 
                 </label>
+
+                <label> Rating: </label>
+                    <input type="text" name="rating" placeholder="Rating"/>
+
                 <label>
-                    Review or Rating
+                    Review
                     <textarea
-                        name="review-or-rating"
-                        defaultValue="Review or rating"
+                        name="review"
+                        defaultValue="Review"
                         rows={4}
                         cols={40}
                     />
@@ -73,7 +116,7 @@ function FormOne(){
 
                 <label>
                     Social Media Links
-                    <input type="text" name="social-media" placeholder="social-media"/>
+                    <input type="text" name="socialmedia" placeholder="social-media"/>
                 </label>
 
             </form>
@@ -83,3 +126,9 @@ function FormOne(){
 
 
 export default FormOne;
+
+
+// <label>
+//   <input type=“radio” name=“role-playing”>
+//   Role Playing
+// </label>
