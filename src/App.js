@@ -21,7 +21,7 @@ const filteredReviews = gameReviews.filter((data) =>(
 ))
 
   return (
-    <div>
+    <div className="homebase">
        <Navbar setSearchTerm={setSearchTerm} />
       <ReviewList gameReviews={filteredReviews}  />
     </div>
