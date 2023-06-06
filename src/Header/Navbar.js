@@ -18,12 +18,17 @@ function Navbar () {
 
     const [searchTerm, setSearchTerm] = useState("")
     const [searchGameReviews, setSearchGameReviews] = useState([])
+
+    const filteredReviews = searchGameReviews.filter((data) =>(
+        data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
+    ))
   
+    console.log(filteredReviews)
 
     return (
     <div className="fixed top-0 left-0 h-screen w-auto m-0 flex flex-col bg-gray-900 text-white shadow-lg">
      <Logo logo={logo} />
-     <Search /> 
+     <Search setSearchTerm={setSearchTerm} /> 
      <HomeIcon homeIcon={<FaHome size="28" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
      <GuidesIcon />
