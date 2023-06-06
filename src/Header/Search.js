@@ -1,6 +1,6 @@
 
 
-function Search ({searchIcon}) {
+function Search ({}) {
     return (
         <div className="">
             <form > 
