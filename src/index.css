@@ -9,10 +9,20 @@
   .logo{
     @apply relative flex items-center justify-center h-60 w-60 mt-2 mb-2 mx-auto ;
   }
-  .homebase{
-    @apply flex p-96 ;
- 
+
+  .navbar{
+    @apply flex m-0 ;
   }
+
+  /* In Home component */
+  .home-container { 
+    @apply p-60 pt-12;
+  }
+
+  .review-list {
+    @apply p-60 pt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4;
+  }
+
 }
 
 .iconSpan {
