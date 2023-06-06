@@ -9,6 +9,10 @@
   .logo{
     @apply relative flex items-center justify-center h-60 w-60 mt-2 mb-2 mx-auto ;
   }
+  .homebase{
+    @apply flex p-96 ;
+ 
+  }
 }
 
 .iconSpan {

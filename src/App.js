@@ -22,9 +22,10 @@ const filteredReviews = gameReviews.filter((data) =>(
 ))
 
   return (
-    <div>
-      <Navbar setSearchTerm={setSearchTerm} />
-      <Home/>
+    
+    <div className="homebase">
+       <Navbar setSearchTerm={setSearchTerm} />
+       <Home/>
       <ReviewList gameReviews={filteredReviews}  />
     </div>
   );
