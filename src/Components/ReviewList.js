@@ -1,19 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import ReviewCards from './ReviewCards';
 import FormOne from './FormOne';
 
-function ReviewList(){
-    const [gameReviews, setGameReviews] = useState([])
-    //use a state variable here or take this one 
-
-    useEffect(() =>{
-        fetch("http://localhost:3000/reviews")
-        .then(resp => resp.json())
-        .then(data => setGameReviews(data))
-      },[])
-
-      // console.log(gameReviews)
-
+function ReviewList({gameReviews, setGameReviews}){
       const mappedGameReviews = gameReviews.map((gameReview) =>(
         <ReviewCards
         key={gameReview.id}
