@@ -8,7 +8,7 @@ import React from 'react';
 
 function FormOne({gameReviews, setGameReviews}){
     
-    console.log(gameReviews)
+    // console.log(gameReviews)
 
     function handleSubmit(e){
     e.preventDefault()
