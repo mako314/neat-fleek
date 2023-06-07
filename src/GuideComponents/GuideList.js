@@ -5,20 +5,21 @@ import GuideCards from './GuideCards'
 function GuideList({gameGuides}){
     // console.log(gameGuides)
 
-      const mappedGameGuides = gameGuides.map((gameGuides) =>(
+      const mappedGameGuides = gameGuides.map((gameGuide) =>(
         <GuideCards
-        key={gameGuides.id}
-        author={gameGuides.author}
-        socialMedia={gameGuides.socialMedia}
-        image={gameGuides.image}
-        gameTitle={gameGuides.gameTitle}
-        tags={gameGuides.tags}
-        guides={gameGuides.guide}
-        developer={gameGuides.developer}
-        system={gameGuides.system}
-        rating={gameGuides.rating}
+        key={gameGuide.id}
+        author={gameGuide.author}
+        socialMedia={gameGuide.socialMedia}
+        image={gameGuide.image}
+        gameTitle={gameGuide.gameTitle}
+        tags={gameGuide.tags}
+        guides={gameGuide.guide}
+        developer={gameGuide.developer}
+        system={gameGuide.system}
+        rating={gameGuide.rating}
         />
       ))
+      //made the .map(singular in here)
       
     return (
       <>
