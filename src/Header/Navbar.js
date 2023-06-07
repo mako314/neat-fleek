@@ -4,6 +4,7 @@ import Search from "./Search"
 import GuidesIcon from "./GuidesIcon"
 import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
+import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
 // import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
 import {FaFileAlt, FaHome, FaComments } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ function Navbar ({setSearchTerm}) {
 
     return (
     <div className="fixed top-0 left-0 h-screen w-auto m-0 flex flex-col bg-gray-900 text-white shadow-lg">
-     {/* <Logo logo={logo} /> */}
+     <Logo logo={logo} />
      <Search setSearchTerm={setSearchTerm} /> 
      <HomeIcon homeIcon={<FaHome size="28" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
