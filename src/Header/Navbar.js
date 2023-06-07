@@ -26,6 +26,7 @@ function Navbar ({setSearchTerm}) {
 //This is our Home Icon Component
 function HomeIcon ({homeIcon}) {
     function handleClick () {
+        console.log("clicked")
 
 
     }

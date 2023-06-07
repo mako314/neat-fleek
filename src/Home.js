@@ -38,9 +38,6 @@ function Home({gameReviews}){
                 </div>
             </div> 
        <ReviewList gameReviews={gameReviews} />
-       <Routes>
-        <Route path = ':1' element= {<ReviewList gameReviews={gameReviews}/>}/>
-      </Routes>
 
      </div>
     //  this div returns, this is my big return div o ya

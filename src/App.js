@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Navbar from './Header/Navbar';
 import Home from './Home';
+import ReviewList from './ReviewComponents/ReviewList';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -29,6 +30,7 @@ const filteredReviews = gameReviews.filter((data) =>(
        <BrowserRouter>
        <Routes>
         <Route path = '/' element= {<Home gameReviews={filteredReviews} />} />
+        <Route path = 'review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
       </Routes>
       </BrowserRouter>
       </div>
