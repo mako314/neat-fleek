@@ -3,6 +3,7 @@ import ReviewList from './ReviewComponents/ReviewList';
 import FormOne from './ReviewComponents/FormOne';
 import Navbar from './Header/Navbar';
 import Home from './Home';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
 
@@ -26,8 +27,13 @@ const filteredReviews = gameReviews.filter((data) =>(
        <Navbar setSearchTerm={setSearchTerm} />
        </nav>
        <div className="homebase">
-       <Home/>
-      <ReviewList gameReviews={filteredReviews}  />
+       <BrowserRouter>
+       <Routes>
+        <Route path = '/' element= {<Home />} />
+        <Route path = ':1' element= {<ReviewList gameReviews={filteredReviews}  />}/>
+      
+      </Routes>
+      </BrowserRouter>
       </div>
     </div>
   );
