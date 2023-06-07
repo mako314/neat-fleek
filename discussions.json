@@ -1,39 +1,39 @@
 {
-  "disccusions": [
+  "discussions": [
     {
       "id": 1,
       "author": "Emma Thompson",
       "socialMedia": "@EmmazingAdventure",
       "title": "Minecraft: Exploring its Depths",
-      "disccusion": "Let's dive into the world of Minecraft and uncover its many wonders. From building magnificent structures to embarking on epic adventures, Minecraft offers endless possibilities. Share your favorite creations, memorable moments, or tips for new players. Let's celebrate the beauty and versatility of Minecraft together!"
+      "discussion": "Let's dive into the world of Minecraft and uncover its many wonders. From building magnificent structures to embarking on epic adventures, Minecraft offers endless possibilities. Share your favorite creations, memorable moments, or tips for new players. Let's celebrate the beauty and versatility of Minecraft together!"
     },
     {
       "id": 2,
       "author": "Jeffery Adams",
       "socialMedia": "@NerfThisPls",
       "title": "The Dark Side of Overwatch: Unveiling Concerns",
-      "disccusion": "Let's explore the negative aspects of Overwatch. The toxic community, balance issues, and controversial loot box system have sparked concerns. What are your thoughts? Have you encountered toxicity? How do you feel about the game's balance and microtransactions? Let's discuss the complexities of Overwatch's downsides."
+      "discussion": "Let's explore the negative aspects of Overwatch. The toxic community, balance issues, and controversial loot box system have sparked concerns. What are your thoughts? Have you encountered toxicity? How do you feel about the game's balance and microtransactions? Let's discuss the complexities of Overwatch's downsides."
     },
     {
       "id": 3,
       "author": "Henry Anderson",
       "socialMedia": "@HenryRoyale",
       "title": "Apex Legends vs. Fortnite: Battle Royale Rivalry",
-      "disccusion": "Let's dive into the intense competition between Apex Legends and Fortnite, two giants in the battle royale genre. Personally, I find Apex Legends to be the superior game. Its fast-paced gameplay, unique character abilities, and fluid movement mechanics create an exhilarating experience. The game's focus on team dynamics and strategic decision-making adds depth to each match. On the other hand, Fortnite's building mechanics and vibrant, ever-changing world offer a different kind of gameplay. Its massive player base and frequent updates make it a cultural phenomenon. Which game captures your heart? Are you drawn to Apex Legends' intense gunplay and hero-based gameplay or Fortnite's creative building and evolving world? Share your thoughts and let's discuss this epic rivalry!"
+      "discussion": "Let's dive into the intense competition between Apex Legends and Fortnite, two giants in the battle royale genre. Personally, I find Apex Legends to be the superior game. Its fast-paced gameplay, unique character abilities, and fluid movement mechanics create an exhilarating experience. The game's focus on team dynamics and strategic decision-making adds depth to each match. On the other hand, Fortnite's building mechanics and vibrant, ever-changing world offer a different kind of gameplay. Its massive player base and frequent updates make it a cultural phenomenon. Which game captures your heart? Are you drawn to Apex Legends' intense gunplay and hero-based gameplay or Fortnite's creative building and evolving world? Share your thoughts and let's discuss this epic rivalry!"
     },   
     {
       "id": 4,
       "author": "Alexander Reed",
       "socialMedia": "@OldiesButGoldies",
       "title": "Embracing Nostalgia: The Joy of Sly 3 and Older Games",
-      "disccusion": "Let's take a moment to appreciate the beauty of older games and the nostalgia they evoke. As someone who enjoys games like Sly 3, I find immense joy in revisiting these classics. Sly 3: Honor Among Thieves, with its charming characters, clever heists, and stylish art style, holds a special place in my heart. It reminds me of simpler times and the excitement I felt exploring its vibrant world. While newer games offer stunning graphics and advanced mechanics, there's an undeniable magic in revisiting the games of our past. Are you also a fan of older games like Sly 3? Which classics tug at your nostalgic heartstrings? Share your favorite memories and let's celebrate the timeless appeal of these gems!"
+      "discussion": "Let's take a moment to appreciate the beauty of older games and the nostalgia they evoke. As someone who enjoys games like Sly 3, I find immense joy in revisiting these classics. Sly 3: Honor Among Thieves, with its charming characters, clever heists, and stylish art style, holds a special place in my heart. It reminds me of simpler times and the excitement I felt exploring its vibrant world. While newer games offer stunning graphics and advanced mechanics, there's an undeniable magic in revisiting the games of our past. Are you also a fan of older games like Sly 3? Which classics tug at your nostalgic heartstrings? Share your favorite memories and let's celebrate the timeless appeal of these gems!"
     },
     {
       "id": 5,
       "author": "Lucas Carter",
       "socialMedia": "@VirtualVagabond",
       "title": "Red Dead Redemption 2 vs. GTA 5: An Epic Showdown",
-      "disccusion": "The eternal debate of Red Dead Redemption 2 (RDR2) versus Grand Theft Auto 5 (GTA 5) continues! Personally, I believe RDR2 takes the crown. Its immersive narrative, rich characters, and moral dilemmas create an unforgettable experience. The meticulously crafted world of the American frontier adds to its charm. While GTA 5 offers boundless freedom and a satirical take on modern American culture, RDR2's depth and emotional connections make it a true masterpiece. What are your thoughts? Which game do you prefer, and why? Let's discuss this epic showdown!"
+      "discussion": "The eternal debate of Red Dead Redemption 2 (RDR2) versus Grand Theft Auto 5 (GTA 5) continues! Personally, I believe RDR2 takes the crown. Its immersive narrative, rich characters, and moral dilemmas create an unforgettable experience. The meticulously crafted world of the American frontier adds to its charm. While GTA 5 offers boundless freedom and a satirical take on modern American culture, RDR2's depth and emotional connections make it a true masterpiece. What are your thoughts? Which game do you prefer, and why? Let's discuss this epic showdown!"
     }
   ]
 }

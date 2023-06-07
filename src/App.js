@@ -31,7 +31,7 @@ const [gameDiscussions, setGameDiscussions] = useState([])
 
   //grab discussions
   useEffect(() =>{
-    fetch("http://localhost:5000/disccusions")
+    fetch("http://localhost:5000/discussions")
     .then(resp => resp.json())
     .then(data => setGameDiscussions(data))
   },[])

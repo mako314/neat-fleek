@@ -5,16 +5,22 @@ import DiscussionCards from './DiscussionCards';
 function DiscussionsList({gameDiscussions}){
     // console.log(gameGuides)
 
-    //   const mappedDiscussions = gameDiscussions.map((gameDiscussion) =>(
-        
-    //   ))
-    // console.log(gameDiscussions)
+      const mappedDiscussions = gameDiscussions.map((gameDiscussion) =>(
+        <DiscussionCards
+        key={gameDiscussion.id}
+        author={gameDiscussion.author}
+        socialMedia={gameDiscussion.socialMedia}
+        title={gameDiscussion.title}
+        discussion={gameDiscussion.discussion}
+        />
+      ))
+    
       
     return (
       <>
-        <DiscussionCards/>
+        
 
-        {/* <div className="discussionslist">{}</div> */}
+         <div className="discussionslist">{mappedDiscussions}</div> 
 
       </>
     )
