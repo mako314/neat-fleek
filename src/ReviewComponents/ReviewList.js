@@ -1,8 +1,8 @@
 import React from 'react';
 import ReviewCards from './ReviewCards';
-import FormOne from './FormOne';
+// import FormOne from './FormOne';
 
-function ReviewList({gameReviews, setGameReviews}){
+function ReviewList({gameReviews}){
 
       const mappedGameReviews = gameReviews.map((gameReview) =>(
         <ReviewCards
@@ -22,7 +22,6 @@ function ReviewList({gameReviews, setGameReviews}){
     return (
       <>
 
-        {/* <FormOne  gameReviews = {gameReviews} setGameReviews={setGameReviews}/> */}
         <div className="review-list">{mappedGameReviews}</div>
 
       </>
