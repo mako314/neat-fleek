@@ -1,6 +1,8 @@
 import React from "react";
+import ReviewList from './ReviewComponents/ReviewList';
+import FormOne from './ReviewComponents/FormOne';
 
-function Home(){
+function Home({gameReviews}){
     
 
     return(
@@ -19,8 +21,6 @@ function Home(){
                 <a href="https://blizzard.gamespress.com/Diablo-IV#?tab=artwork-5&scrollto="></a> 
         </div>
 
-                {/* they seem to include some extra div after the feat img ID one that wraps this so 3 divs total along with a few section tags and article*/}
-
                 {/* below is used for the gridding */}
 
             <div className="xl:grid-layout gap-y-0 mt-16 md:mt-24"  id="featured-content-container">
@@ -35,8 +35,9 @@ function Home(){
                         {/* all of these can change, setting a template up. */}
                     </ul>
                 </div>
+                
             </div> 
-
+            {/* <ReviewList gameReviews={gameReviews} /> */}
      </div>
     //  this div returns, this is my big return div o ya
     )
