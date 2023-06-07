@@ -39,21 +39,21 @@ const filteredReviews = gameReviews.filter((data) =>(
        <Navbar setSearchTerm={setSearchTerm} />
        </nav>
 
-
        <div>
        
        <Routes>
         <Route path = '/' element= {<Home gameReviews={filteredReviews} />} />
-        <Route path = 'review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
+        <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
       </Routes>
       
 
        <div className="homebase">
-       <Home/>
       <ReviewList gameReviews={filteredReviews}  />
+      {/* so these 2 will be taking different variables, they will be taking shortened X or Y, to display only 4 things! */}
       <GuideList gameGuides = {gameGuides}/>
-
       </div>
+
+    </div>
     </div>
   );
 }
