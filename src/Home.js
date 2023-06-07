@@ -1,7 +1,6 @@
 import React from "react";
 import ReviewList from './ReviewComponents/ReviewList';
 import FormOne from './ReviewComponents/FormOne';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function Home({gameReviews}){
     
@@ -36,9 +35,9 @@ function Home({gameReviews}){
                         {/* all of these can change, setting a template up. */}
                     </ul>
                 </div>
+                
             </div> 
-       <ReviewList gameReviews={gameReviews} />
-
+            <ReviewList gameReviews={gameReviews} />
      </div>
     //  this div returns, this is my big return div o ya
     )

@@ -27,12 +27,12 @@ const filteredReviews = gameReviews.filter((data) =>(
        </nav>
 
        <div>
-       <BrowserRouter>
+       
        <Routes>
         <Route path = '/' element= {<Home gameReviews={filteredReviews} />} />
         <Route path = 'review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
       </Routes>
-      </BrowserRouter>
+      
       </div>
     </div>
   );

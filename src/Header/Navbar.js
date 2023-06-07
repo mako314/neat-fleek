@@ -5,7 +5,7 @@ import GuidesIcon from "./GuidesIcon"
 import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
 import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
-
+import {Link} from "react-router-dom";
 import {FaFileAlt, FaHome, FaComments } from "react-icons/fa";
 
 //The css for the icons exist in the index.css file. I gave it a class name "sidebar-icon" and applied the styles via @apply in tailwind!
@@ -25,16 +25,10 @@ function Navbar ({setSearchTerm}) {
 
 //This is our Home Icon Component
 function HomeIcon ({homeIcon}) {
-    function handleClick () {
-        console.log("clicked")
-
-
-    }
-
+    
     return (
-        <div className="sidebar-icon" onClick={handleClick}>
-            {homeIcon}
-        </div>
+        <Link to={'/'}><div className="sidebar-icon"> {homeIcon} </div></Link>
+
     )
 }
 
