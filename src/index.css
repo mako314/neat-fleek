@@ -4,23 +4,31 @@
 
 @layer components {
   .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white ;
+    @apply relative flex items-center justify-center h-24 w-24 mt-2 mb-2 mx-auto shadow-lg bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white ;
   }
   .logo{
     @apply relative flex items-center justify-center h-60 w-60 mt-2 mb-2 mx-auto ;
   }
 
   .navbar{
-    @apply flex m-0 ;
+    @apply fixed top-0 left-0 h-screen w-48 m-0 flex flex-col bg-gray-900 text-white shadow-lg;
   }
 
   /* In Home component */
   .home-container { 
-    @apply p-60 pt-12;
+    @apply container mx-auto p-48 pt-12;
   }
 
   .review-list {
     @apply p-60 pt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4;
+  }
+
+  .search-bar{
+    @apply  w-auto ;
+  }
+
+  .search-container{
+    @apply place-content-center flex ;
   }
 
 }

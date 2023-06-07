@@ -1,6 +1,6 @@
 function Logo ({logo}) {
     return (
-        <div>
+        <div className="flex">
             <span className="logo">
                 <img src={logo}/>
             </span>
