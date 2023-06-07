@@ -1,4 +1,5 @@
 import React from 'react';
+import DiscussionCards from './DiscussionCards';
 // import FormOne from './FormOne';
 
 function DiscussionsList({gameDiscussions}){
@@ -11,8 +12,9 @@ function DiscussionsList({gameDiscussions}){
       
     return (
       <>
+        <DiscussionCards/>
 
-        <div className="discussionslist">{}</div>
+        {/* <div className="discussionslist">{}</div> */}
 
       </>
     )
