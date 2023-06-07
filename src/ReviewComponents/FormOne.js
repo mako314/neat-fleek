@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 // conditionals we may need: 
 // toggle review rating (possibly more to come)
@@ -6,15 +6,66 @@ import React from 'react';
 //move social media links to bottom
 //flex items-center max-w-md mx-auto
 
+// <label>
+//   <input type=“radio” name=“role-playing”>
+//   Role Playing
+// </label>
+
 // on change on select, stateVariable, e.target.postType.value 
 
-function FormOne({gameReviews, setGameReviews}){
-    
+function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDiscussions, setGameDiscussions}){
+    const [submitType, setSubmitType] = useState("")
     // console.log(gameReviews)
 
     function handleSubmit(e){
     e.preventDefault()
 
+    
+    setSubmitType(e.target.postType.value) // I think I'll use state.
+
+    // console.log(typeof submitType)  This works, I also did typeof to determine whether or not this is a string.
+    
+
+    if (submitType === "reviews" ) {
+    // fetch('http://localhost:3000/reviews', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body : JSON.stringify(newReview)
+    // })
+
+    // .then(resp => resp.json())
+    // .then(newReview => setGameReviews([...gameReviews, newReview]))
+
+      } else if (submitType === "guides") {
+        // fetch('http://localhost:4000/guides', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body : JSON.stringify(newReview)
+    // })
+
+    // .then(resp => resp.json())
+    // .then(newGameGuideObject => setGameGuides([...gameGuides, newGameGuideObject here]))
+      } else {
+        // fetch('http://localhost:5000/discussions', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body : JSON.stringify(newReview)
+    // })
+
+    // .then(resp => resp.json())
+    // .then(newDiscussion => setGameDiscussions([...gameDiscussions, newDiscussion]))
+      }
+
+        //make an object for discussions
     const newReview = {
         author: e.target.name.value,
         socialMedia:e.target.socialmedia.value,
@@ -26,17 +77,17 @@ function FormOne({gameReviews, setGameReviews}){
         system: e.target.systems.value,
         rating: e.target.rating.value
     }
-    fetch('http://localhost:3000/reviews', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body : JSON.stringify(newReview)
-    })
+    // fetch('http://localhost:3000/reviews', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body : JSON.stringify(newReview)
+    // })
 
-    .then(resp => resp.json())
-    .then(newReview => setGameReviews([...gameReviews, newReview]))
+    // .then(resp => resp.json())
+    // .then(newReview => setGameReviews([...gameReviews, newReview]))
 
     }
 
@@ -54,7 +105,7 @@ function FormOne({gameReviews, setGameReviews}){
                 <select name="postType"> 
                 <option value="reviews">Reviews</option>
                 <option value="guides">Guides</option>
-                <option value="news">Discussions</option>
+                <option value="discussions">Discussions</option>
 
                 </select>
 
@@ -122,6 +173,8 @@ function FormOne({gameReviews, setGameReviews}){
                     <input type="text" name="socialmedia" placeholder="social-media"/>
                 </label>
 
+                <button className="bg-red-700" type="submit"> SUBMIT BUTTON </button>
+
             </form>
         </div>
     )
@@ -129,9 +182,3 @@ function FormOne({gameReviews, setGameReviews}){
 
 
 export default FormOne;
-
-
-// <label>
-//   <input type=“radio” name=“role-playing”>
-//   Role Playing
-// </label>
