@@ -37,7 +37,6 @@ function Home({gameReviews}){
                 </div>
                 
             </div> 
-            {/* <ReviewList gameReviews={gameReviews} /> */}
      </div>
     //  this div returns, this is my big return div o ya
     )
