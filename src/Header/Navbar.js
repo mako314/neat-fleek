@@ -15,10 +15,10 @@ function Navbar ({setSearchTerm}) {
     <div className="">
      <Logo logo={logo} />
      <Search setSearchTerm={setSearchTerm} /> 
-     <HomeIcon homeIcon={<FaHome size="28" />}/>
-     <ReviewIcon reviewIcon={<FaFileAlt size="28" />} />
+     <HomeIcon homeIcon={<FaHome size="40" />}/>
+     <ReviewIcon reviewIcon={<FaFileAlt size="40" />} />
      <GuidesIcon />
-     <DiscussionsIcon discussionsIcon={<FaComments size="28"/>} />
+     <DiscussionsIcon discussionsIcon={<FaComments size="40"/>} />
     </div>
     )
 }

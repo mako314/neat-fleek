@@ -3,7 +3,7 @@ import {FaDraftingCompass} from "react-icons/fa";
 
 function GuidesIcon () {
   const  [mouseOver, setMouseOver] = useState(true)
-  const guidesIcon = <FaDraftingCompass size="28" />
+  const guidesIcon = <FaDraftingCompass size="40" />
   const guideTextContent = <span> Guides </span>
 
   function handleMouseOver () {
