@@ -12,7 +12,7 @@ import {FaFileAlt, FaHome, FaComments } from "react-icons/fa";
 function Navbar ({setSearchTerm}) {
 
     return (
-    <div className="fixed top-0 left-0 h-screen w-auto m-0 flex flex-col bg-gray-900 text-white shadow-lg">
+    <div className="">
      <Logo logo={logo} />
      <Search setSearchTerm={setSearchTerm} /> 
      <HomeIcon homeIcon={<FaHome size="28" />}/>
