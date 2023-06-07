@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import ReviewList from './ReviewComponents/ReviewList';
-import FormOne from './ReviewComponents/FormOne';
 import Navbar from './Header/Navbar';
 import Home from './Home';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
@@ -26,12 +24,11 @@ const filteredReviews = gameReviews.filter((data) =>(
       <nav className="navbar">
        <Navbar setSearchTerm={setSearchTerm} />
        </nav>
-       <div className="homebase">
+
+       <div>
        <BrowserRouter>
        <Routes>
-        <Route path = '/' element= {<Home />} />
-        <Route path = ':1' element= {<ReviewList gameReviews={filteredReviews}  />}/>
-      
+        <Route path = '/' element= {<Home gameReviews={filteredReviews} />} />
       </Routes>
       </BrowserRouter>
       </div>
