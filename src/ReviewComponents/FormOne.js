@@ -6,12 +6,15 @@ import React from 'react';
 //move social media links to bottom
 //flex items-center max-w-md mx-auto
 
+// on change on select, stateVariable, e.target.postType.value 
+
 function FormOne({gameReviews, setGameReviews}){
     
     // console.log(gameReviews)
 
     function handleSubmit(e){
     e.preventDefault()
+
     const newReview = {
         author: e.target.name.value,
         socialMedia:e.target.socialmedia.value,
@@ -48,10 +51,10 @@ function FormOne({gameReviews, setGameReviews}){
 
                 <label>Submission Type</label>
 
-                <select name="postType">
+                <select name="postType"> 
                 <option value="reviews">Reviews</option>
                 <option value="guides">Guides</option>
-                <option value="news">News</option>
+                <option value="news">Discussions</option>
 
                 </select>
 
