@@ -4,8 +4,13 @@ import Search from "./Search"
 import GuidesIcon from "./GuidesIcon"
 import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
+
 import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
 import {Link} from "react-router-dom";
+
+// import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
+// import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
+
 import {FaFileAlt, FaHome, FaComments } from "react-icons/fa";
 
 //The css for the icons exist in the index.css file. I gave it a class name "sidebar-icon" and applied the styles via @apply in tailwind!
@@ -13,7 +18,7 @@ function Navbar ({setSearchTerm}) {
 
     return (
     <div className="">
-     <Logo logo={logo} />
+     {/* <Logo logo={logo} /> */}
      <Search setSearchTerm={setSearchTerm} /> 
      <HomeIcon homeIcon={<FaHome size="40" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="40" />} />
