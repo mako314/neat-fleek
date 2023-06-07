@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import ReviewCards from './Components/ReviewCards';
-import ReviewList from './Components/ReviewList';
-import FormOne from './Components/FormOne';
+import ReviewList from './ReviewComponents/ReviewList';
+import FormOne from './ReviewComponents/FormOne';
 import Navbar from './Header/Navbar';
 import Home from './Home';
 
