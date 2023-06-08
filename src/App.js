@@ -61,18 +61,13 @@ const filteredReviews = gameReviews.filter((data) =>(
        />
        
        <Routes>
-        <Route path = '/' element= {<Home />} />
+        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {gameGuides} gameDiscussions ={gameDiscussions} />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
         <Route exact path= '/guide-list' element={<GuideList gameGuides = {gameGuides}/>}/>
         <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={gameDiscussions} />}/>
       </Routes>
       
-       <div className="homebase">
-      <ReviewList gameReviews={filteredReviews}  />
-      {/* so these 2 will be taking different variables, they will be taking shortened X or Y, to display only 4 things! */}
-      <GuideList gameGuides = {gameGuides}/>
-      <DiscussionList gameDiscussions ={gameDiscussions}/>
-      </div>
+     
 
     </div>
     </div>
