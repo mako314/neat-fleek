@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import GuideList from './GuideComponents/GuideList';
 import DiscussionList from './DiscussionComponents/DiscussionList'
 import FormOne from './ReviewComponents/FormOne';
+import DisplayPage from './DisplayPage';
 
 
 function App() {
@@ -71,6 +72,7 @@ const filteredReviews = gameReviews.filter((data) =>(
         <Route exact path= '/guide-list' element={<GuideList gameGuides = {gameGuides}/>}/>
         <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={gameDiscussions} />}/>
         <Route exact path= '/form' element={<FormOne gameReviews={gameReviews} setGameReviews={setGameReviews} gameGuides={gameGuides} setGameGuides={setGameGuides} gameDiscussions={gameDiscussions} setGameDiscussions={setGameDiscussions}/>} />
+        <Route exact path = '/display-page' element= {<DisplayPage/>}/>
       </Routes>
       
      
