@@ -48,7 +48,7 @@
   }
 
   .text-over-image {
-    @apply absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70;
+    @apply absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-100;
   }
 
 }
