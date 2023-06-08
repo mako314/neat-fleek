@@ -71,18 +71,18 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     .then(resp => resp.json())
     .then(newReview => setGameReviews([...gameReviews, newReview]))
 
-    //   } else if (submitType === "guides") {
-        // fetch('http://localhost:4000/guides', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body : JSON.stringify(newReview)
-    // })
+      } else if (submitType === "guides") {
+        fetch('http://localhost:4000/guides', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body : JSON.stringify(newReview)
+    })
 
-    // .then(resp => resp.json())
-    // .then(newGameGuideObject => setGameGuides([...gameGuides, newGameGuideObject here]))
+    .then(resp => resp.json())
+    .then(newGuide => setGameGuides([...gameGuides, newGuide]))
     //   } else {
         // fetch('http://localhost:5000/discussions', {
     //   method: 'POST',
