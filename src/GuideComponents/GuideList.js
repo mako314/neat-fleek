@@ -23,7 +23,8 @@ function GuideList({gameGuides}){
       
     return (
       <>
-
+      <h1 className="flex-col flex items-center justify-center text-center font-bold">Guides 🧑‍🏫</h1>
+      <br></br>
         <div className="guide-list">{mappedGameGuides}</div>
 
       </>
