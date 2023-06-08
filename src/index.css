@@ -23,6 +23,14 @@
     @apply p-60 pt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4;
   }
 
+  .guide-list {
+    @apply p-60 pt-12 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4;
+  }
+
+  .discussionslist {
+    @apply p-60 pt-12 ;
+  }
+
   .search-bar{
     @apply  w-auto bg-slate-100 text-black font-serif;
   }
@@ -33,6 +41,10 @@
 
   .form {
     @apply flex-auto items-center justify-center;
+  }
+
+  .form-container {
+    @apply flex-col p-96 h-screen flex items-center justify-center;
   }
 
 }
