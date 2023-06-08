@@ -1,5 +1,4 @@
 import React from "react";
-import ReviewIcon from "./ReviewIcon";
 import Search from "./Search"
 import GuidesIcon from "./GuidesIcon"
 import DiscussionsIcon from "./DiscussionsIcon";
@@ -27,6 +26,17 @@ function HomeIcon ({homeIcon}) {
     
     return (
         <Link to={'/'}><div className="sidebar-icon"> {homeIcon} </div></Link>
+
+    )
+}
+
+function ReviewIcon ({reviewIcon}) {
+    return (
+        <div>
+            
+            <Link to={'review-list'}><div className="sidebar-icon"> {reviewIcon} </div></Link>
+           
+        </div>
 
     )
 }
