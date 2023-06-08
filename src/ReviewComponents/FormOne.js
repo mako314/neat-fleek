@@ -20,6 +20,38 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     function handleSubmit(e){
     e.preventDefault()
 
+     //make an object for discussions
+
+    const newReview = {
+        author: e.target.name.value,
+        socialMedia:e.target.socialmedia.value,
+        image: e.target.image.value,
+        gameTitle: e.target.title.value,
+        // tags: e.target.value,
+        review: e.target.review.value,
+        developer: e.target.developer.value,
+        system: e.target.systems.value,
+        rating: e.target.rating.value
+    }
+    const newGuide= {
+        author: e.target.name.value,
+        socialMedia:e.target.socialmedia.value,
+        image: e.target.image.value,
+        gameTitle: e.target.title.value,
+        // tags: e.target.value,
+        guide: e.target.review.value,
+        developer: e.target.developer.value,
+        system: e.target.systems.value,
+        rating: e.target.rating.value
+    }
+
+    // const newDiscussion = {
+    //     author: e.target.name.value,
+    //     socialMedia:e.target.socialmedia.value,
+    //     image: e.target.image.value,
+    //     title: e.target.title.value,
+    //     discussion:
+    // }
     
     setSubmitType(e.target.postType.value) // I think I'll use state.
 
@@ -27,19 +59,19 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     
 
     if (submitType === "reviews" ) {
-    // fetch('http://localhost:3000/reviews', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body : JSON.stringify(newReview)
-    // })
+    fetch('http://localhost:3000/reviews', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body : JSON.stringify(newReview)
+    })
 
-    // .then(resp => resp.json())
-    // .then(newReview => setGameReviews([...gameReviews, newReview]))
+    .then(resp => resp.json())
+    .then(newReview => setGameReviews([...gameReviews, newReview]))
 
-      } else if (submitType === "guides") {
+    //   } else if (submitType === "guides") {
         // fetch('http://localhost:4000/guides', {
     //   method: 'POST',
     //   headers: {
@@ -51,7 +83,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
 
     // .then(resp => resp.json())
     // .then(newGameGuideObject => setGameGuides([...gameGuides, newGameGuideObject here]))
-      } else {
+    //   } else {
         // fetch('http://localhost:5000/discussions', {
     //   method: 'POST',
     //   headers: {
@@ -65,40 +97,14 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     // .then(newDiscussion => setGameDiscussions([...gameDiscussions, newDiscussion]))
       }
 
-        //make an object for discussions
-    const newReview = {
-        author: e.target.name.value,
-        socialMedia:e.target.socialmedia.value,
-        image: e.target.image.value,
-        gameTitle: e.target.title.value,
-        tags: e.target.value,
-        review: e.target.review.value,
-        developer: e.target.developer.value,
-        system: e.target.systems.value,
-        rating: e.target.rating.value
     }
-    // fetch('http://localhost:3000/reviews', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body : JSON.stringify(newReview)
-    // })
-
-    // .then(resp => resp.json())
-    // .then(newReview => setGameReviews([...gameReviews, newReview]))
-
-    }
-
 
 
     return(
 
         <div className = "h-screen flex items-center justify-center"> 
             <form className="flex-auto items-center justify-center"
-            onSubmit={handleSubmit}
-            >
+            onSubmit={handleSubmit}>
 
                 <label>Submission Type</label>
 

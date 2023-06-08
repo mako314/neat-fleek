@@ -13,14 +13,14 @@ import React from 'react';
 
 function ReviewCards({author, socialMedia, image, gameTitle, tags, review, developer, system, rating}){
 
-    let mappedTags = tags.map((tag, index) => (
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
-    ))
+    // let mappedTags = tags.map((tag, index) => (
+    //     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
+    // ))
 
     return (
       
 // , index
-//`${tag}-${index}`
+//`${tag}-${index}` this was placed in the span, so I can likely replicate it with guides
   
 
 <div className="max-w-sm rounded overflow-hidden shadow-lg">
@@ -37,7 +37,7 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
   </div>
 
   <div className="px-6 pt-4 pb-2">
-    {mappedTags}
+    {/* {mappedTags} */}
   </div>
 
 </div>
