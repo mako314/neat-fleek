@@ -15,6 +15,8 @@ import React, {useState} from 'react';
 
 function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDiscussions, setGameDiscussions}){
     const [submitType, setSubmitType] = useState("")
+    const [tagSubmission, setTagSubmission] = useState([])
+
     // console.log(gameReviews)
 
     function handleSubmit(e){
@@ -27,18 +29,19 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
         socialMedia:e.target.socialmedia.value,
         image: e.target.image.value,
         gameTitle: e.target.title.value,
-        // tags: e.target.value,
+        // tags: tagSubmission,
         review: e.target.review.value,
         developer: e.target.developer.value,
         system: e.target.systems.value,
         rating: e.target.rating.value
     }
+    //object to take in guide information
     const newGuide= {
         author: e.target.name.value,
         socialMedia:e.target.socialmedia.value,
         image: e.target.image.value,
         gameTitle: e.target.title.value,
-        // tags: e.target.value,
+        // tags: tagSubmission,
         guide: e.target.review.value,
         developer: e.target.developer.value,
         system: e.target.systems.value,
@@ -52,6 +55,10 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     //     title: e.target.title.value,
     //     discussion:
     // }
+
+    //lets try to console.log our tagSubmission here, uses stateVariable and an onChange, ur on fire mate wtf
+    console.log(tagSubmission)
+
     
     setSubmitType(e.target.postType.value) // I think I'll use state.
 
@@ -97,6 +104,8 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     // .then(newDiscussion => setGameDiscussions([...gameDiscussions, newDiscussion]))
       }
 
+      //we'll likely work on this tomorrow.
+
     }
 
 
@@ -112,7 +121,6 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
                 <option value="reviews">Reviews</option>
                 <option value="guides">Guides</option>
                 <option value="discussions">Discussions</option>
-
                 </select>
 
                 <label> Author: </label>
@@ -144,20 +152,20 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
                 <label>
                     Tags, Check all that apply:
 
-                    <input type= "radio" name="role-playing" value="role-playing"/>
-                    <input type= "radio" name="multiplayer" value="multiplayer"/>
-                    <input type= "radio" name="puzzlers-and-party" value="puzzlers-and-party"/>
-                    <input type= "radio" name="shooters" value="shooters"/>
-                    <input type= "radio" name="simulation-and-sports" value="simulation-and-sports"/>
-                    <input type= "radio" name="strategy" value="strategy"/>
-                    <input type= "radio" name="action-adventure" value="action-adventure"/>
-                    <input type= "radio" name="sandbox" value="sandbox"/>
-                    <input type= "radio" name="real-time-strategy" value="real-time-strategy"/>
-                    <input type= "radio" name="multiplayer-online-battle-arena" value="multiplayer-online-battle-arena"/>
-                    <input type= "radio" name="platformer" value="platformer"/>
-                    <input type= "radio" name="survival-and-horror" value="survival-and-horror"/>
-                    <input type= "radio" name="battle-royale-games" value="battle-royale-games"/>
-                    <input type= "radio" name="fighting-games" value="fighting-games"/>
+                    <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="multiplayer" value="multiplayer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="puzzlers-and-party" value="puzzlers-and-party" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="shooters" value="shooters" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="simulation-and-sports" value="simulation-and-sports" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="strategy" value="strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="action-adventure" value="action-adventure" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="sandbox" value="sandbox" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="real-time-strategy" value="real-time-strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="multiplayer-online-battle-arena" value="multiplayer-online-battle-arena" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="platformer" value="platformer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="survival-and-horror" value="survival-and-horror" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="battle-royale-games" value="battle-royale-games" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    <input type= "radio" name="fighting-games" value="fighting-games" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
 
                 </label>
 
