@@ -22,7 +22,7 @@ function GuideCards({author, socialMedia, image, gameTitle, tags, guides, develo
     <h2 className="font-style: italic font font-semibold text-xs mb-2">{author}</h2>
     <h3 className ="font-style: italic font font-semibold text-xs mb-2" >{socialMedia}</h3>
     <p className="text-gray-700 text-base">
-        Review Content Here{/* {review} */}
+        GUIDE Content Here{/* {review} */}
     </p>
   </div>
 

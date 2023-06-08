@@ -4,7 +4,7 @@ import GuideList from './GuideComponents/GuideList';
 import DiscussionList from './DiscussionComponents/DiscussionList'
 
 
-function Home({filteredReviews, gameGuides, gameDiscussions}){
+function Home({filteredReviews, gameGuides, gameDiscussions, setDisplayContent}){
     
     return(
         // treating this div below like a section, could put everything in <section> this div might do the same thing as sectioning it though
@@ -37,8 +37,8 @@ function Home({filteredReviews, gameGuides, gameDiscussions}){
                     </ul>
                 </div>
             </div> 
-            <ReviewList gameReviews={filteredReviews}  />
-            <GuideList gameGuides = {gameGuides}/>
+            <ReviewList gameReviews={filteredReviews} setDisplayContent={setDisplayContent}  />
+            <GuideList gameGuides = {gameGuides} setDisplayContent={setDisplayContent}/>
             <DiscussionList gameDiscussions ={gameDiscussions} />
      </div>
     

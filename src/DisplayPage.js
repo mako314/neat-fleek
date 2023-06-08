@@ -33,6 +33,9 @@ return (
 
 export default DisplayPage;
 
+// when they click, have access to the object they click, 
+
+
 
 // {/* <img className="object-scale-down h-48 w-96" src={image} alt={gameTitle}/>
 

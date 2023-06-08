@@ -16,6 +16,12 @@ const [gameReviews, setGameReviews] = useState([])
 const [gameGuides, setGameGuides] = useState([])
 const [gameDiscussions, setGameDiscussions] = useState([])
 
+//populate this and send it to DisplayPage
+//pass it to home since all of our stuff is in home 
+//Write ? ?  ?
+const [displayContent, setDisplayContent] = useState([])
+
+console.log(displayContent) //testing to see if I'm properly grabbing the content I want
 
   //grab reviews
   useEffect(() =>{
@@ -38,7 +44,6 @@ const [gameDiscussions, setGameDiscussions] = useState([])
     .then(data => setGameDiscussions(data))
   },[])
 
-// console.log(gameDiscussions)
 
 const filteredReviews = gameReviews.filter((data) =>(
     data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
@@ -61,7 +66,7 @@ const filteredReviews = gameReviews.filter((data) =>(
        /> */}
        
        <Routes>
-        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {gameGuides} gameDiscussions ={gameDiscussions} />} />
+        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {gameGuides} gameDiscussions ={gameDiscussions} setDisplayContent={setDisplayContent} />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
         <Route exact path= '/guide-list' element={<GuideList gameGuides = {gameGuides}/>}/>
         <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={gameDiscussions} />}/>

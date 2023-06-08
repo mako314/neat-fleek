@@ -2,10 +2,11 @@ import React from 'react';
 import ReviewCards from './ReviewCards';
 // import FormOne from './FormOne';
 
-function ReviewList({gameReviews}){
+function ReviewList({gameReviews, setDisplayContent}){
 
       const mappedGameReviews = gameReviews.map((gameReview) =>(
         <ReviewCards
+        setDisplayContent={setDisplayContent}
         key={gameReview.id}
         author={gameReview.author}
         socialMedia={gameReview.socialMedia}
@@ -18,7 +19,7 @@ function ReviewList({gameReviews}){
         rating={gameReview.rating}
         />
       ))
-      
+      // console.log(setDisplayContent)
     return (
       <>
 
