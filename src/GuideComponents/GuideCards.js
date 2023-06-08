@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function GuideCards({author, socialMedia, image, gameTitle, tags, guides, developer, system, rating}){
+function GuideCards({author, socialMedia, image, gameTitle, tags, guides, developer, system, rating, setDisplayContent}){
 
     // let mappedTags = tags.map((tag, index) => (
     //     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
@@ -9,11 +9,29 @@ function GuideCards({author, socialMedia, image, gameTitle, tags, guides, develo
 
     // , index
 //`${tag}-${index}` this was placed in the span, need to replicate it here
+
+
+function handleClick(){
+  //may have to pass ID to go to that one?
+  //write an empty object to populate clicks, after that's done, just use setDisplayContent
+  const clickedObject = {
+    image: image,
+    author: author,
+    socialMedia: socialMedia,
+    gameTitle: gameTitle,
+    guide: guides,
+    tags: tags,
+    developer: developer,
+    system: system,
+    rating: rating,
+  }
+  setDisplayContent(clickedObject)
+}
     return (
 
   
 
-<div className="max-w-sm rounded overflow-hidden shadow-lg">
+<div className="max-w-sm rounded overflow-hidden shadow-lg" onClick={handleClick}>
 
   <img className="object-scale-down h-48 w-96" src={image} alt={gameTitle}/>
 

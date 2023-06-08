@@ -2,11 +2,12 @@ import React from 'react';
 import GuideCards from './GuideCards'
 // import FormOne from './FormOne';
 
-function GuideList({gameGuides}){
+function GuideList({gameGuides, setDisplayContent}){
     // console.log(gameGuides)
 
       const mappedGameGuides = gameGuides.map((gameGuide) =>(
         <GuideCards
+        setDisplayContent={setDisplayContent}
         key={gameGuide.id}
         author={gameGuide.author}
         socialMedia={gameGuide.socialMedia}

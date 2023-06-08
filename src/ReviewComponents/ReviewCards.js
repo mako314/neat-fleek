@@ -20,6 +20,7 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
         <span name= "tags" className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
     ))
     function handleClick(){
+      //may have to pass ID to go to that one?
       //write an empty object to populate clicks, after that's done, just use setDisplayContent
       const clickedObject = {
         image: image,
