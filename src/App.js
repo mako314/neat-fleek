@@ -46,9 +46,9 @@ const filteredReviews = gameReviews.filter((data) =>(
 
   return (
     <div>
-      {/* <nav className="navbar">
+      <nav className="navbar">
        <Navbar setSearchTerm={setSearchTerm} />
-       </nav> */}
+       </nav>
        
        <div>
        <FormOne 
