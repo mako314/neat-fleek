@@ -28,7 +28,7 @@
   }
 
   .discussionslist {
-    @apply p-60 pt-12 ;
+    @apply p-60 pt-12;
   }
 
   .search-bar{
