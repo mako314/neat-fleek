@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "./Search"
-import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
 import {Link} from "react-router-dom";
 import {FaFileAlt, FaHome, FaComments, FaDraftingCompass } from "react-icons/fa";
@@ -45,6 +44,17 @@ function GuidesIcon ({guidesIcon}) {
         <div>
             
             <Link to={'guide-list'}><div className="sidebar-icon"> {guidesIcon} </div></Link>
+           
+        </div>
+
+    )
+}
+
+function DiscussionsIcon ({discussionsIcon}) {
+    return (
+        <div>
+            
+            <Link to={'discussionslist'}><div className="sidebar-icon"> {discussionsIcon} </div></Link>
            
         </div>
 
