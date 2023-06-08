@@ -439,8 +439,8 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
 
     return(
         // may need to do a form here
-        <div className = "h-screen flex items-center justify-center">
-        <form className="flex-auto items-center justify-center"
+        <div className = "form-container">
+        <form className="form"
               onSubmit={handleSubmit}>
 
                 <label>Submission Type

@@ -21,8 +21,11 @@ function ReviewList({gameReviews}){
       
     return (
       <>
-
-        <div className="review-list">{mappedGameReviews}</div>
+      <h1 className="flex-col flex items-center justify-center text-center font-bold">Reviews 📖</h1>
+      <br></br>
+        <div className="review-list">
+          {mappedGameReviews}
+        </div>
 
       </>
     )

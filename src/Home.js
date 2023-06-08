@@ -13,14 +13,14 @@ function Home({filteredReviews, gameGuides, gameDiscussions}){
     {/* this could hold the whole home container, but we could section stuff out inside of it 
     mx-auto w-full max-w-xl md:max-w-7xl object-cover rounded-4
     */}
-        <div className="" id="featured-image">
-                <img className=" mx-auto w-full max-w-screen-md md:max-w-7x1 object-contain rounded-xl"
+        <div className="bg-zinc-200" id="featured-image">
+                <img className=" mx-auto w-full max-w-screen-md md:max-w-7x1 object-contain rounded-xl pt-8"
                 src="https://imguscdn.gamespress.com/cdn/files/BlizzardLive/2023/06/012315-b6ae72f6/D4_Lilith_3840x2160_png_jpgcopy.jpg?otf=y&lightbox=y&ex=2023-08-01+03%3A00%3A00&sky=eff1edc08fe4845e5744a0d86f63add336c5b99ea625331da87465b906929854&w=1024&maxheight=4096&mode=pad&format=jpg"
                 alt="Diablo 4"
                 />
                 {/* href in here so if you link the picture */}
                 <a href="https://blizzard.gamespress.com/Diablo-IV#?tab=artwork-5&scrollto="></a> 
-        </div>
+        
 
                 {/* below is used for the gridding */}
 
@@ -37,9 +37,12 @@ function Home({filteredReviews, gameGuides, gameDiscussions}){
                     </ul>
                 </div>
             </div> 
+            </div>
+            <div className="bg-slate-300">
             <ReviewList gameReviews={filteredReviews}  />
             <GuideList gameGuides = {gameGuides}/>
             <DiscussionList gameDiscussions ={gameDiscussions} />
+            </div>
      </div>
     
 

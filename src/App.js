@@ -45,7 +45,7 @@ const filteredReviews = gameReviews.filter((data) =>(
 ))
 
   return (
-    <div>
+    <div className="bg-main">
       <nav className="navbar">
        <Navbar setSearchTerm={setSearchTerm} />
        </nav>
