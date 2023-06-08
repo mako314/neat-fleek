@@ -37,7 +37,7 @@ function Home({filteredReviews, gameGuides, gameDiscussions}){
                 </div>
             </div> 
             </div>
-            <div className="bg-slate-300">
+            <div className="bg-white">
             <ReviewList gameReviews={filteredReviews}  />
             <GuideList gameGuides = {gameGuides}/>
             <DiscussionList gameDiscussions ={gameDiscussions} />
