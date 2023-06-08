@@ -6,10 +6,7 @@ import React, {useState} from 'react';
 //move social media links to bottom
 //flex items-center max-w-md mx-auto
 
-// <label>
-//   <input type=“radio” name=“role-playing”>
-//   Role Playing
-// </label>
+
 
 // on change on select, stateVariable, e.target.postType.value 
 
@@ -29,7 +26,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
         socialMedia:e.target.socialmedia.value,
         image: e.target.image.value,
         gameTitle: e.target.title.value,
-        // tags: tagSubmission,
+        tags: tagSubmission,
         review: e.target.review.value,
         developer: e.target.developer.value,
         system: e.target.systems.value,
@@ -41,7 +38,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
         socialMedia:e.target.socialmedia.value,
         image: e.target.image.value,
         gameTitle: e.target.title.value,
-        // tags: tagSubmission,
+        tags: tagSubmission,
         guide: e.target.review.value,
         developer: e.target.developer.value,
         system: e.target.systems.value,
@@ -57,7 +54,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     // }
 
     //lets try to console.log our tagSubmission here, uses stateVariable and an onChange, ur on fire mate wtf
-    console.log(tagSubmission)
+    console.log(newReview)
 
     
     setSubmitType(e.target.postType.value) // I think I'll use state.
@@ -103,7 +100,6 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     // .then(resp => resp.json())
     // .then(newDiscussion => setGameDiscussions([...gameDiscussions, newDiscussion]))
       }
-
       //we'll likely work on this tomorrow.
 
     }
@@ -149,23 +145,101 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
                         <option value="Nintendo"> Nintendo Switch </option>
                     </select>
                 </label>
+
+                {/* Tag stuff  I'd ideally like to change the values to something capitalized, at least the first letter, yes I know it's a mess.*/}
                 <label>
+
                     Tags, Check all that apply:
 
+                    <label>
+                    Single Player
                     <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Multiplayer
                     <input type= "radio" name="multiplayer" value="multiplayer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Role Playing 
+                    <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Puzzlers and Party
                     <input type= "radio" name="puzzlers-and-party" value="puzzlers-and-party" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Shooter
                     <input type= "radio" name="shooters" value="shooters" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
-                    <input type= "radio" name="simulation-and-sports" value="simulation-and-sports" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Sports
+                    <input type= "radio" name="sports" value="sports" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+                    
+                    <label>
+                    Simulation
+                    <input type= "radio" name="simulation" value="simulation" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Strategy
                     <input type= "radio" name="strategy" value="strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
-                    <input type= "radio" name="action-adventure" value="action-adventure" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Action
+                    <input type= "radio" name="action" value="action" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+                    
+                    <label>
+                    Adventure
+                    <input type= "radio" name="adventure" value="adventure" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Openworld
+                    <input type= "radio" name="open-world" value="open-world" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Sandbox
                     <input type= "radio" name="sandbox" value="sandbox" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Real-time Strategy
                     <input type= "radio" name="real-time-strategy" value="real-time-strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
-                    <input type= "radio" name="multiplayer-online-battle-arena" value="multiplayer-online-battle-arena" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Multiplayer Online Battle Arena 
+                    <input type= "radio" name="multiplayer-online-battle-arena" value="moba" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Platformer
                     <input type= "radio" name="platformer" value="platformer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Survival and Horror
                     <input type= "radio" name="survival-and-horror" value="survival-and-horror" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
-                    <input type= "radio" name="battle-royale-games" value="battle-royale-games" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
-                    <input type= "radio" name="fighting-games" value="fighting-games" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Battle Royale
+                    <input type= "radio" name="battle-royale" value="battle-royale" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
+
+                    <label>
+                    Fighting
+                    <input type= "radio" name="fighting" value="fighting" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
+                    </label>
 
                 </label>
 
@@ -186,13 +260,16 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
                     Social Media Links
                     <input type="text" name="socialmedia" placeholder="social-media"/>
                 </label>
-
+                {/* this button needs to be pressed twice */}
                 <button className="bg-red-700" type="submit"> SUBMIT BUTTON </button>
 
             </form>
         </div>
     )
 }
-
+// <label>
+//   <input type=“radio” name=“role-playing”>
+//   Role Playing
+// </label>
 
 export default FormOne;

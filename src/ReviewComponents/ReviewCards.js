@@ -13,9 +13,9 @@ import React from 'react';
 
 function ReviewCards({author, socialMedia, image, gameTitle, tags, review, developer, system, rating}){
 
-    // let mappedTags = tags.map((tag, index) => (
-    //     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
-    // ))
+    let mappedTags = tags.map((tag, index) => (
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
+    ))
 
     return (
       
