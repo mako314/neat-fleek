@@ -54,10 +54,10 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     // }
 
     //lets try to console.log our tagSubmission here, uses stateVariable and an onChange, ur on fire mate wtf
-    console.log(newReview)
+    // console.log(newReview)
 
     
-    setSubmitType(e.target.postType.value) // I think I'll use state.
+    setSubmitType(e.target.postType.value) // Using state to grab the category of the submission. (review, guides, discussion)
 
     // console.log(typeof submitType)  This works, I also did typeof to determine whether or not this is a string.
     
@@ -146,7 +146,9 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
                     </select>
                 </label>
 
-                {/* Tag stuff  I'd ideally like to change the values to something capitalized, at least the first letter, yes I know it's a mess.*/}
+                {/* Tag stuff  I'd ideally like to change the values to something capitalized, at least the first letter, yes I know it's a mess.
+                Possibly change onChange to an onClick, because atm you can click an infinite amount of times.
+                */}
                 <label>
 
                     Tags, Check all that apply:

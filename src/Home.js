@@ -1,8 +1,8 @@
 import React from "react";
-import ReviewList from './ReviewComponents/ReviewList';
-import FormOne from './ReviewComponents/FormOne';
+import ReviewList from "./ReviewComponents/ReviewList";
 
-function Home({gameReviews}){
+
+function Home(){
     
 
     return(
@@ -35,7 +35,6 @@ function Home({gameReviews}){
                         {/* all of these can change, setting a template up. */}
                     </ul>
                 </div>
-                
             </div> 
      </div>
     //  this div returns, this is my big return div o ya

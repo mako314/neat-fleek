@@ -61,7 +61,7 @@ const filteredReviews = gameReviews.filter((data) =>(
        />
        
        <Routes>
-        <Route path = '/' element= {<Home gameReviews={filteredReviews} />} />
+        <Route path = '/' element= {<Home />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
       </Routes>
       
