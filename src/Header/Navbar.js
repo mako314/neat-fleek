@@ -23,7 +23,7 @@ function Navbar ({setSearchTerm}) {
 function HomeIcon ({homeIcon}) {
     
     return (
-        <Link to={'/'}><div className="sidebar-icon"> {homeIcon} </div></Link>
+        <Link to={'/'}><div className="sidebar-icon" title="Home"> {homeIcon} </div></Link>
 
     )
 }
@@ -32,7 +32,7 @@ function ReviewIcon ({reviewIcon}) {
     return (
         <div>
             
-            <Link to={'review-list'}><div className="sidebar-icon"> {reviewIcon} </div></Link>
+            <Link to={'review-list'}><div className="sidebar-icon" title="View Reviews"> {reviewIcon} </div></Link>
            
         </div>
 
@@ -43,7 +43,7 @@ function GuidesIcon ({guidesIcon}) {
     return (
         <div>
             
-            <Link to={'guide-list'}><div className="sidebar-icon"> {guidesIcon} </div></Link>
+            <Link to={'guide-list'}><div className="sidebar-icon" title="View Guides"> {guidesIcon} </div></Link>
            
         </div>
 
@@ -54,7 +54,7 @@ function DiscussionsIcon ({discussionsIcon}) {
     return (
         <div>
             
-            <Link to={'discussionslist'}><div className="sidebar-icon"> {discussionsIcon} </div></Link>
+            <Link to={'discussionslist'}><div className="sidebar-icon" title="View Discussions"> {discussionsIcon} </div></Link>
            
         </div>
 
