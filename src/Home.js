@@ -1,10 +1,11 @@
 import React from "react";
 import ReviewList from "./ReviewComponents/ReviewList";
+import GuideList from './GuideComponents/GuideList';
+import DiscussionList from './DiscussionComponents/DiscussionList'
 
 
-function Home(){
+function Home({filteredReviews, gameGuides, gameDiscussions}){
     
-
     return(
         // treating this div below like a section, could put everything in <section> this div might do the same thing as sectioning it though
  
@@ -36,7 +37,12 @@ function Home(){
                     </ul>
                 </div>
             </div> 
+            <ReviewList gameReviews={filteredReviews}  />
+            <GuideList gameGuides = {gameGuides}/>
+            <DiscussionList gameDiscussions ={gameDiscussions} />
      </div>
+    
+
     //  this div returns, this is my big return div o ya
     )
 
