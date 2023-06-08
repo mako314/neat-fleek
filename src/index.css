@@ -16,7 +16,7 @@
 
   /* In Home component */
   .home-container { 
-    @apply container mx-auto p-48 pt-12;
+    @apply container mx-auto p-48 pt-0;
   }
 
   .review-list {
