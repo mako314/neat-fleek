@@ -8,7 +8,8 @@
       "developer": "miHoYo",
       "system": "Available on PC, PlayStation, and Mobile",
       "tags": [
-        "Action RPG",
+        "Action",
+        "RPG",
         "Open World"
       ],
       "image": "https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc",
@@ -23,7 +24,8 @@
       "developer": "Insomniac Games",
       "system": "PlayStation",
       "tags": [
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Superhero"
       ],
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png",
@@ -38,8 +40,8 @@
       "developer": "Nintendo",
       "system": "Nintendo Switch",
       "tags": [
-        "Life Simulation",
-        "Social"
+        "Simulation",
+        "Adventure"
       ],
       "image": "https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg",
       "review": "Animal Crossing: New Horizons, developed by Nintendo, is a delightful and charming life simulation game that has captured the hearts of players worldwide. Released for the Nintendo Switch, it offers a serene and immersive experience as you build and customize your own deserted island paradise. With its relaxing gameplay, adorable animal villagers, and endless opportunities for creativity, Animal Crossing: New Horizons provides a much-needed escape and a sense of tranquility.    The game revolves around creating and managing your own island getaway. From the moment you arrive, you have the freedom to shape the island according to your vision. Whether it's planting trees, constructing buildings, or decorating the landscape, the level of customization is impressive. The game progresses in real-time, with the seasons changing and events occurring throughout the year, creating a sense of immersion and connection to the virtual world.    The heart of Animal Crossing: New Horizons lies in its endearing and quirky animal villagers. Each character has their own personality, interests, and daily routines. Interacting with them, building friendships, and helping them with their requests creates a sense of community and camaraderie. The villagers offer delightful and humorous dialogue, and their presence adds life and charm to the island.    The game's relaxing and laid-back atmosphere is enhanced by its beautiful visuals and soothing soundtrack. The colorful and detailed graphics bring the island to life, while the calming music sets the perfect tone for leisurely activities like fishing, bug-catching, or simply strolling through the island. Animal Crossing: New Horizons encourages players to take a break from the stresses of everyday life and immerse themselves in a tranquil and uplifting virtual escape.    In conclusion, Animal Crossing: New Horizons is a heartwarming and delightful experience that offers a much-needed respite from the real world. Its customization options, adorable animal villagers, and relaxing gameplay create a sense of serenity and joy. The game's attention to detail, charming visuals, and immersive soundtrack make it a standout title on the Nintendo Switch. Whether you're a fan of the franchise or new to the series, Animal Crossing: New Horizons is a must-play game that will captivate you with its whimsical charm and endless possibilities.",
@@ -98,7 +100,7 @@
       "developer": "Blizzard Entertainment",
       "system": "Available on PC, PlayStation, Xbox, and Nintendo Switch",
       "tags": [
-        "Team-Based Shooter",
+        "Shooter",
         "Multiplayer"
       ],
       "image": "https://m.media-amazon.com/images/M/MV5BYjBkNTJkOWUtNTg1ZS00NGZhLWIxMGUtOWE0ZDA0NzRkODM3XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg",
@@ -114,7 +116,7 @@
       "system": "Available on PC, PlayStation, Xbox, and Nintendo Switch",
       "tags": [
         "Battle Royale",
-        "First-Person Shooter"
+        "Shooter"
       ],
       "image": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg",
       "review": "Apex Legends, developed by Respawn Entertainment, is a fast-paced and exhilarating battle royale game that has captivated players since its release. Set in the Titanfall universe, Apex Legends stands out from other games in the genre with its unique blend of team-based gameplay, diverse roster of characters, and smooth gunplay mechanics. With its dynamic matches and strategic elements, Apex Legends offers an adrenaline-fueled experience that keeps players coming back for more.    One of the key features of Apex Legends is its roster of diverse and distinct characters, known as Legends. Each Legend possesses unique abilities and playstyles, allowing for a wide range of tactical approaches and team synergies. From defensive specialists to aggressive assaulters, the roster offers something for every type of player. The inclusion of character-specific ultimate abilities adds an extra layer of strategy and excitement, creating opportunities for game-changing moments and thrilling comebacks.    The gameplay in Apex Legends is fast-paced and polished, with responsive controls and satisfying gunplay. The game's focus on team-based play encourages communication, coordination, and strategic decision-making. Respawn's innovative Ping system allows players to communicate non-verbally with their teammates, making it easier to share information, mark enemy locations, or request specific items. Additionally, the game's respawn mechanics, which enable teammates to revive fallen allies at designated locations, add a unique twist to the battle royale formula, fostering a sense of teamwork and resilience.    Apex Legends also benefits from regular updates and seasonal content drops that keep the game fresh and engaging. The developers actively listen to the community's feedback and make adjustments to maintain a balanced and enjoyable experience. The introduction of limited-time events, new maps, and game modes adds variety and replayability to the game. Furthermore, the inclusion of a ranked mode appeals to competitive players looking for a more intense and skill-based experience.    In conclusion, Apex Legends delivers an adrenaline-pumping battle royale experience with its team-focused gameplay, diverse roster of characters, and polished mechanics. The game's emphasis on communication and strategic decision-making sets it apart from other titles in the genre, creating an engaging and dynamic multiplayer experience. Whether you're a fan of battle royale games or new to the genre, Apex Legends offers a thrilling and addictive experience that is sure to keep you hooked for hours on end.",
@@ -128,7 +130,8 @@
       "developer": "Nintendo",
       "system": "Nintendo Switch",
       "tags": [
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Open World"
       ],
       "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
@@ -144,7 +147,7 @@
       "system": "Available on multiple platforms",
       "tags": [
         "Battle Royale",
-        "Third-Person Shooter"
+        "Shooter"
       ],
       "image": "https://m.media-amazon.com/images/M/MV5BNzU2YTY2OTgtZGZjZi00MTAyLThlYjUtMWM5ZmYzOGEyOWJhXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
       "review": "Fortnite, developed by Epic Games, is a wildly popular battle royale game that has taken the gaming world by storm. Offering a unique blend of building mechanics, shooting gameplay, and vibrant visuals, Fortnite has become a cultural phenomenon and a global sensation. The game drops players onto an ever-changing island where they compete against each other to be the last one standing.    One of the standout features of Fortnite is its building mechanics. Players can collect resources and use them to construct structures such as walls, ramps, and floors. This adds a strategic element to the gameplay, allowing players to create their own cover, traverse the environment quickly, and outmaneuver opponents. The building aspect sets Fortnite apart from other battle royale games, adding an extra layer of depth and creativity to the experience.    Another key aspect of Fortnite's success is its commitment to regular updates and events. The developers consistently introduce new content, including limited-time game modes, collaborations with popular franchises, and in-game events that keep the gameplay fresh and exciting. This frequent update cycle has contributed to the game's longevity and ability to retain a dedicated player base. Additionally, the game's cross-platform functionality allows players on different devices to play together, fostering a sense of community and inclusivity.    While Fortnite has undeniably become a cultural phenomenon, it has also faced criticism for its addictive nature and the presence of microtransactions. The game's free-to-play model and the option to purchase cosmetic items and battle passes have generated controversy and sparked debates about the ethics of loot boxes and in-game spending. Furthermore, the game's popularity has attracted a younger player base, which can sometimes result in a toxic online environment.   In conclusion, Fortnite offers a unique and fast-paced battle royale experience with its building mechanics, regular updates, and vibrant visuals. Its accessibility, cross-platform functionality, and cultural impact have solidified its place in the gaming landscape. However, the game's addictive nature, microtransactions, and potential toxicity should be considered by players, particularly those with younger audiences. Nevertheless, Fortnite continues to evolve and captivate players with its innovative gameplay and engaging community.",
@@ -173,8 +176,7 @@
       "developer": "EA Sports",
       "system": "Available on multiple platforms",
       "tags": [
-        "Sports",
-        "Soccer"
+        "Sports"
       ],
       "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltfedbc032bbac9ca2/60db2364ed93bb0fb197a6fa/f7503bfbd076bcb69f0957343c00be42da8f388d.jpg",
       "review": "FIFA 21, developed by EA Vancouver, is the latest installment in the long-running FIFA series and offers a comprehensive and immersive soccer experience. The game features updated player rosters, realistic graphics, and enhanced gameplay mechanics that aim to replicate the excitement and authenticity of the sport. FIFA 21's attention to detail and dedication to realism make it a must-play for fans of the beautiful game.    One of the standout features of FIFA 21 is its improved gameplay. The game introduces new features such as Agile Dribbling, which allows for more precise and skillful ball control, and Positioning Personality, which enhances the realism of player movements and positioning on the pitch. The improved collision system and enhanced AI contribute to more realistic player interactions, making every match feel dynamic and engaging. Additionally, the Career Mode and Ultimate Team mode offer a variety of gameplay options, allowing players to manage their favorite teams, compete in leagues and tournaments, and build their dream squads.    FIFA 21 also boasts impressive visuals and presentation. The player models are highly detailed and closely resemble their real-life counterparts, while the stadiums and crowds create an immersive atmosphere. The game's audio, including commentary and crowd chants, further enhances the sense of being in a live soccer match. The inclusion of various licensed leagues, teams, and players adds an authentic touch, making FIFA 21 a must-play for fans who want to experience their favorite soccer competitions.    However, FIFA 21 received criticism for its lack of significant improvements compared to previous iterations. Some players felt that certain gameplay aspects, such as AI defending and goalkeeping, still needed refinement. Additionally, the game's emphasis on microtransactions and the Ultimate Team mode may not appeal to players who prefer a more traditional single-player experience. Despite these shortcomings, FIFA 21 remains a solid soccer game that offers an immersive and enjoyable experience for fans of the sport.    In conclusion, FIFA 21 offers an authentic and immersive soccer experience with its improved gameplay mechanics, realistic visuals, and comprehensive game modes. While it may not bring significant innovations to the series, it still delivers the excitement and atmosphere of the sport. Whether you're a dedicated fan of soccer or a casual player, FIFA 21 provides a solid and enjoyable soccer simulation.",
@@ -188,8 +190,7 @@
       "developer": "EA Sports",
       "system": "Available on multiple platforms",
       "tags": [
-        "Sports",
-        "Football"
+        "Sports"
       ],
       "image": "https://www.golfdigest.com/content/dam/images/golfdigest/fullset/2020/06/Madden21Cover_Square.jpg",
       "review": "Madden 21, developed by EA Tiburon, is the latest installment in the long-running Madden NFL series. As the premier football simulation game, Madden 21 delivers an authentic and immersive experience for fans of the sport. The game features updated rosters, realistic player movements, and stunning visuals that bring the NFL to life on your gaming console.    One of the standout features of Madden 21 is the improved gameplay mechanics. The game offers smoother animations, enhanced player control, and more responsive gameplay, allowing for a more realistic and enjoyable football experience. The new Skill Stick gives players greater control over ball carriers and allows for more precise maneuvers on the field. Additionally, the introduction of the X-Factor and Superstar abilities adds a new layer of strategy, with specific players possessing unique skills that can impact the outcome of a game.    Madden 21 also offers a variety of game modes to keep players engaged. Franchise mode allows players to take control of their favorite NFL team, managing the roster, making trades, and guiding the team to success. The Ultimate Team mode lets players build their dream team by collecting player cards and competing against others online. The game's presentation is also top-notch, with authentic broadcast-style commentary and detailed stadiums that enhance the overall immersion.    However, it's worth noting that Madden 21 faced some criticism for its lack of significant improvements and innovation compared to previous installments. Some players felt that the game fell short in certain areas, such as AI behavior, defensive mechanics, and overall game balance. Additionally, the game's microtransactions and emphasis on the Ultimate Team mode may be off-putting to some players who prefer a more traditional single-player experience.    In conclusion, Madden 21 offers an immersive and realistic football experience with improved gameplay mechanics and a variety of game modes to keep players entertained. While it may not bring groundbreaking innovations to the series, it still provides an enjoyable and authentic representation of the NFL. Whether you're a die-hard football fan or a casual player, Madden 21 offers a solid and engaging football experience.",
@@ -203,8 +204,8 @@
       "developer": "Battlestate Games",
       "system": "PC",
       "tags": [
-        "First-Person Shooter",
-        "Survival"
+        "Shooter",
+        "Survival Horror"
       ],
       "image": "https://editors.dexerto.com/wp-content/uploads/2021/09/23/Escape-from-Tarkov-header.jpg",
       "review": "Escape from Tarkov, developed by Battlestate Games, is a hardcore and immersive online first-person shooter that delivers a unique and intense gaming experience. Set in the war-torn city of Tarkov, players must scavenge for resources, complete objectives, and survive against AI-controlled enemies and other players in a persistent and unforgiving world. The game's attention to detail and realism is unmatched, with realistic weapon mechanics, ballistics, and a complex health system that adds to the sense of tension and challenge.    One of the standout features of Escape from Tarkov is its deep and immersive gameplay loop. Players start with minimal gear and must navigate through various locations, looting supplies, engaging in firefights, and extracting with their loot. The game's emphasis on survival and tactical decision-making creates a palpable sense of tension and high stakes. Each raid is a unique and unpredictable experience, as players never know what they will encounter or who they will encounter in the dangerous and dynamic world of Tarkov.    However, it's important to note that Escape from Tarkov is not a game for casual players. The learning curve is steep, and the game can be punishing for those unfamiliar with its mechanics and gameplay style. The game's hardcore nature, while appealing to some players, may deter those seeking a more accessible and forgiving experience. Additionally, the game is still in development, and occasional bugs and server issues can detract from the overall experience. Nevertheless, for those seeking a challenging and immersive shooter with unparalleled depth and realism, Escape from Tarkov offers a unique and intense gaming experience.",
@@ -233,7 +234,8 @@
       "developer": "Insomniac Games",
       "system": "PlayStation",
       "tags": [
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Platformer"
       ],
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/DwVjpbKOsFOyPdNzmSTSWuxG.png",
@@ -248,7 +250,8 @@
       "developer": "Sucker Punch Productions",
       "system": "PlayStation",
       "tags": [
-        "Stealth",
+        "Action",
+        "Adventure",
         "Platformer"
       ],
       "image": "https://e.snmc.io/lk/l/x/1583ea7957a6b8febf1380973f970617/8971853",
@@ -263,7 +266,8 @@
       "developer": "CD Projekt",
       "system": "Available on multiple platforms",
       "tags": [
-        "Action RPG",
+        "Action",
+        "RPG",
         "Open World"
       ],
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
@@ -278,8 +282,7 @@
       "developer": "Riot Games",
       "system": "PC",
       "tags": [
-        "First-Person Shooter",
-        "Tactical"
+        "Shooter"
       ],
       "image": "https://static.toiimg.com/thumb/msid-94867381,width-1280,height-720,resizemode-4/.jpg",
       "review": "Valorant, developed by Riot Games, is a highly competitive and tactical first-person shooter that combines the precision of gunplay with the strategic elements of team-based gameplay. Set in a near-future world, the game features a diverse cast of agents, each with unique abilities that add depth and variety to the gameplay. Valorant emphasizes teamwork and coordination, as players must work together to outsmart their opponents and secure victory.    One of the standout features of Valorant is its tight and precise gunplay. The game's mechanics reward skillful aim and strategic positioning, creating a satisfying and rewarding experience for players who excel in accuracy and decision-making. The gunplay is complemented by the agents' abilities, which add a layer of depth and strategy to the matches. Each agent has their own set of abilities that can be used strategically to gain an advantage or disrupt the enemy team, fostering a dynamic and constantly evolving gameplay experience.    Valorant also excels in its competitive nature and the emphasis on teamwork. Matches are intense and require effective communication and coordination among teammates to succeed. The game's ranked mode provides a competitive ladder for players to climb, further fueling the drive for improvement and mastery. The developers have shown a commitment to listening to the community and continuously balancing and updating the game, ensuring a fair and competitive environment for all players.    In summary, Valorant is a highly polished and engaging competitive shooter that offers a blend of precise gunplay, strategic abilities, and teamwork. The game's focus on skill and coordination, coupled with its diverse cast of agents, creates a depth of gameplay that keeps players coming back for more. With its commitment to balancing and improving the experience, Valorant is a must-try for fans of the first-person shooter genre and those looking for a challenging and competitive multiplayer experience.",
@@ -293,7 +296,8 @@
       "developer": "CD Projekt",
       "system": "Available on multiple platforms",
       "tags": [
-        "Action RPG",
+        "Action",
+        "RPG",
         "Open World"
       ],
       "image": "https://images.gog-statics.com/c75e674590b8947542c809924df30bbef2190341163dd08668e243c266be70c5.jpg",
@@ -308,7 +312,8 @@
       "developer": "Rockstar Games",
       "system": "Available on multiple platforms",
       "tags": [
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Open World"
       ],
       "image": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
@@ -323,7 +328,8 @@
       "developer": "Rockstar Games",
       "system": "Available on multiple platforms",
       "tags": [
-        "Action-Adventure",
+        "Action",
+        "Adventure",
         "Open World"
       ],
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/0911/VIB0SeEj9vT6DTv7P4thJLZi.jpg",

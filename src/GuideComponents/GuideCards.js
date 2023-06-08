@@ -3,10 +3,12 @@ import React from 'react';
 
 function GuideCards({author, socialMedia, image, gameTitle, tags, guides, developer, system, rating}){
 
-    let mappedTags = tags.map((tag, index) => (
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
-    ))
+    // let mappedTags = tags.map((tag, index) => (
+    //     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
+    // ))
 
+    // , index
+//`${tag}-${index}` this was placed in the span, need to replicate it here
     return (
 
   
@@ -25,7 +27,7 @@ function GuideCards({author, socialMedia, image, gameTitle, tags, guides, develo
   </div>
 
   <div className="px-6 pt-4 pb-2">
-    {mappedTags}
+    {/* {mappedTags} */}
   </div>
 
 </div>

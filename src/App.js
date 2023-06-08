@@ -5,6 +5,7 @@ import ReviewList from './ReviewComponents/ReviewList';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import GuideList from './GuideComponents/GuideList';
 import DiscussionList from './DiscussionComponents/DiscussionList'
+import FormOne from './ReviewComponents/FormOne';
 
 
 function App() {
@@ -48,11 +49,19 @@ const filteredReviews = gameReviews.filter((data) =>(
       {/* <nav className="navbar">
        <Navbar setSearchTerm={setSearchTerm} />
        </nav> */}
-
+       
        <div>
+       <FormOne 
+       gameReviews={gameReviews}
+       setGameReviews={setGameReviews}
+       gameGuides={gameGuides}
+       setGameGuides={setGameGuides}
+       gameDiscussions={gameDiscussions}
+       setGameDiscussions={setGameDiscussions}
+       />
        
        <Routes>
-        <Route path = '/' element= {<Home gameReviews={filteredReviews} />} />
+        <Route path = '/' element= {<Home />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
       </Routes>
       

@@ -20,7 +20,7 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
     return (
       
 // , index
-//`${tag}-${index}`
+//`${tag}-${index}` this was placed in the span, so I can likely replicate it with guides
   
 
 <div className="max-w-sm rounded overflow-hidden shadow-lg">
@@ -37,7 +37,7 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
   </div>
 
   <div className="px-6 pt-4 pb-2">
-    {mappedTags}
+    {/* {mappedTags} */}
   </div>
 
 </div>
