@@ -1,26 +1,19 @@
 import React from "react";
-import ReviewIcon from "./ReviewIcon";
 import Search from "./Search"
-import GuidesIcon from "./GuidesIcon"
-import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
-
-// import logo from "/home/bryantw/Development/code/neat-fleet/neat-fleet/src/logo-transparent-white-halfsize.png"
 import {Link} from "react-router-dom";
-
-
-import {FaFileAlt, FaHome, FaComments } from "react-icons/fa";
+import {FaFileAlt, FaHome, FaComments, FaDraftingCompass } from "react-icons/fa";
 
 //The css for the icons exist in the index.css file. I gave it a class name "sidebar-icon" and applied the styles via @apply in tailwind!
 function Navbar ({setSearchTerm}) {
 
     return (
     <div className="">
-     {/* <Logo logo={logo} /> */}
+     <Logo />
      <Search setSearchTerm={setSearchTerm} /> 
      <HomeIcon homeIcon={<FaHome size="40" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="40" />} />
-     <GuidesIcon />
+     <GuidesIcon guidesIcon={<FaDraftingCompass size="40" />}/>
      <DiscussionsIcon discussionsIcon={<FaComments size="40"/>} />
     </div>
     )
@@ -30,7 +23,40 @@ function Navbar ({setSearchTerm}) {
 function HomeIcon ({homeIcon}) {
     
     return (
-        <Link to={'/'}><div className="sidebar-icon"> {homeIcon} </div></Link>
+        <Link to={'/'}><div className="sidebar-icon" title="Home"> {homeIcon} </div></Link>
+
+    )
+}
+
+function ReviewIcon ({reviewIcon}) {
+    return (
+        <div>
+            
+            <Link to={'review-list'}><div className="sidebar-icon" title="View Reviews"> {reviewIcon} </div></Link>
+           
+        </div>
+
+    )
+}
+
+function GuidesIcon ({guidesIcon}) {
+    return (
+        <div>
+            
+            <Link to={'guide-list'}><div className="sidebar-icon" title="View Guides"> {guidesIcon} </div></Link>
+           
+        </div>
+
+    )
+}
+
+function DiscussionsIcon ({discussionsIcon}) {
+    return (
+        <div>
+            
+            <Link to={'discussionslist'}><div className="sidebar-icon" title="View Discussions"> {discussionsIcon} </div></Link>
+           
+        </div>
 
     )
 }
