@@ -10,15 +10,17 @@ return (
 
     </div>
 
-    <div className="w-full flex-grow pt-1 px-3">
-<h1 className="font-bold text-xl mb-2">{gameTitle}</h1>
+<div className="w-full flex-grow pt-1 px-3">
 
-<h2 className="font-style: italic font font-semibold text-xs mb-2">{author}</h2>
+    <h1 className="font-bold text-xl mb-2">{gameTitle}</h1>
 
-<h3 className ="font-style: italic font font-semibold text-xs mb-2" >{socialMedia}</h3>
+    <h2 className="font-style: italic font font-semibold text-xs mb-2">{author}</h2>
 
-<p className="text-gray-700 text-base"> Review Content Here{/* {review} */} </p>
-    </div>
+    <h3 className ="font-style: italic font font-semibold text-xs mb-2" >{socialMedia}</h3>
+
+    <p className="text-gray-700 text-base"> Review Content Here{/* {review} */} </p>
+
+</div>
 
     <div className="w-fixed w-full flex-shrink flex-grow-0 px-2">
 
