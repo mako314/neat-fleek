@@ -408,8 +408,9 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     const discussionForm = (
 
        <>
-        <label> Author: 
-                <input type="text" name="name" placeholder="name"/>
+        <label> 
+            Author: 
+            <input type="text" name="name" placeholder="name"/>
          </label>
 
         <label>
@@ -446,7 +447,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
 
                 <select name="postType" 
                 onChange={(e) => setSubmitType(e.target.value)}>
-                <option> Please Select an Option Below</option>
+                <option> Please Select an Option Below </option>
                 <option value="reviews">Reviews</option>
                 <option value="guides">Guides</option>
                 <option value="discussions">Discussions</option>
