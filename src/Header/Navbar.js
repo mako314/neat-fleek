@@ -1,10 +1,9 @@
 import React from "react";
 import Search from "./Search"
-import GuidesIcon from "./GuidesIcon"
 import DiscussionsIcon from "./DiscussionsIcon";
 import Logo from "./Logo";
 import {Link} from "react-router-dom";
-import {FaFileAlt, FaHome, FaComments } from "react-icons/fa";
+import {FaFileAlt, FaHome, FaComments, FaDraftingCompass } from "react-icons/fa";
 
 //The css for the icons exist in the index.css file. I gave it a class name "sidebar-icon" and applied the styles via @apply in tailwind!
 function Navbar ({setSearchTerm}) {
@@ -15,7 +14,7 @@ function Navbar ({setSearchTerm}) {
      <Search setSearchTerm={setSearchTerm} /> 
      <HomeIcon homeIcon={<FaHome size="40" />}/>
      <ReviewIcon reviewIcon={<FaFileAlt size="40" />} />
-     <GuidesIcon />
+     <GuidesIcon guidesIcon={<FaDraftingCompass size="40" />}/>
      <DiscussionsIcon discussionsIcon={<FaComments size="40"/>} />
     </div>
     )
@@ -35,6 +34,17 @@ function ReviewIcon ({reviewIcon}) {
         <div>
             
             <Link to={'review-list'}><div className="sidebar-icon"> {reviewIcon} </div></Link>
+           
+        </div>
+
+    )
+}
+
+function GuidesIcon ({guidesIcon}) {
+    return (
+        <div>
+            
+            <Link to={'guide-list'}><div className="sidebar-icon"> {guidesIcon} </div></Link>
            
         </div>
 
