@@ -19,7 +19,7 @@ function DiscussionsList({gameDiscussions}){
     return (
       <>
         
-        <h1 className="flex-col flex items-center text-center font-bold bg-green-600 text-3xl">Discussions🗣️📣</h1>
+        <h1 className="flex-col flex items-center text-center font-bold bg-green-600 text-3xl border-2 border-black">Discussions🗣️📣</h1>
         <br></br>
          <div className="discussionslist">{mappedDiscussions}</div> 
 
