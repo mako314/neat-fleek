@@ -51,20 +51,21 @@ const filteredReviews = gameReviews.filter((data) =>(
        </nav>
        
        <div>
-       <FormOne 
+       {/* <FormOne 
        gameReviews={gameReviews}
        setGameReviews={setGameReviews}
        gameGuides={gameGuides}
        setGameGuides={setGameGuides}
        gameDiscussions={gameDiscussions}
        setGameDiscussions={setGameDiscussions}
-       />
+       /> */}
        
        <Routes>
         <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {gameGuides} gameDiscussions ={gameDiscussions} />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
         <Route exact path= '/guide-list' element={<GuideList gameGuides = {gameGuides}/>}/>
         <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={gameDiscussions} />}/>
+        <Route exact path= '/form' element={<FormOne gameReviews={gameReviews} setGameReviews={setGameReviews} gameGuides={gameGuides} setGameGuides={setGameGuides} gameDiscussions={gameDiscussions} setGameDiscussions={setGameDiscussions}/>} />
       </Routes>
       
      
