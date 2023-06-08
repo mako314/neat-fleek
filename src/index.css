@@ -24,7 +24,7 @@
   }
 
   .search-bar{
-    @apply  w-auto bg-slate-100 text-black ;
+    @apply  w-auto bg-slate-100 text-black font-serif;
   }
 
   .search-container{
