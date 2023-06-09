@@ -21,7 +21,7 @@ function ReviewList({gameReviews}){
       
     return (
       <>
-      <h1 className="flex-col flex items-center justify-center text-center font-bold">Reviews 📖</h1>
+      <h1 className="flex-col flex items-center text-center font-bold bg-green-600 text-3xl border-2 border-black">Reviews 📖</h1>
       <br></br>
         <div className="review-list">
           {mappedGameReviews}

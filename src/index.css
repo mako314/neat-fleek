@@ -16,7 +16,7 @@
 
   /* In Home component */
   .home-container { 
-    @apply container mx-auto p-48 pt-12;
+    @apply container mx-auto p-48 pt-0;
   }
 
   .review-list {
@@ -28,7 +28,7 @@
   }
 
   .discussionslist {
-    @apply p-60 pt-12 ;
+    @apply p-60 pt-12;
   }
 
   .search-bar{
@@ -45,6 +45,10 @@
 
   .form-container {
     @apply flex-col p-96 h-screen flex items-center justify-center;
+  }
+
+  .text-over-image {
+    @apply absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-100;
   }
 
 }

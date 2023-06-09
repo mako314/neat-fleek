@@ -23,7 +23,7 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
 //`${tag}-${index}` this was placed in the span, so I can likely replicate it with guides
   
 
-<div className="max-w-sm rounded overflow-hidden shadow-lg">
+<div className="max-w-sm rounded overflow-hidden shadow-lg bg-antiflashwhite border-green-600 border-2">
 
   <img className="object-scale-down h-48 w-96" src={image} alt={gameTitle}/>
 
