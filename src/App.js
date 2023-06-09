@@ -49,7 +49,7 @@ const filteredGuides = gameGuides.filter((data) =>(
 ))
 
 const filteredDiscussions = gameDiscussions.filter((data) =>(
-  data.discussion.toLowerCase().includes(searchTerm.toLowerCase())
+  data.discussion.toLowerCase().includes(searchTerm.toLowerCase()) || data.author.toLowerCase().includes(searchTerm.toLowerCase()) || data.title.toLowerCase().includes(searchTerm.toLowerCase())
 ))
 
   return (
