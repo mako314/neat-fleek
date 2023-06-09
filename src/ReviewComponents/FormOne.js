@@ -124,7 +124,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
             </label>
             <label className="text-antiflashwhite">
                 Select a System:
-                <select name="systems">
+                <select classname="text-black" name="systems">
                     <option value="PC"> PC </option>
                     <option value="PlayStation"> PlayStation 5 </option>
                     <option value="Xbox"> Xbox Series X|S </option>
@@ -277,7 +277,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
             <label className="text-antiflashwhite">
                 Select a System:
                 <select name="systems">
-                    <option value="PC"> PC </option>
+                    <option className="text-black" value="PC"> PC </option>
                     <option value="PlayStation"> PlayStation 5 </option>
                     <option value="Xbox"> Xbox Series X|S </option>
                     <option value="Nintendo"> Nintendo Switch </option>

@@ -40,7 +40,7 @@
   }
 
   .form {
-    @apply flex-auto items-center justify-center;
+    @apply flex-auto items-center justify-center bg-green-600 border-2 border-double border-black border-spacing-4 ;
   }
 
   .form-container {
