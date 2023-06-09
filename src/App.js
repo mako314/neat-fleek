@@ -41,11 +41,11 @@ const [gameDiscussions, setGameDiscussions] = useState([])
 // console.log(gameDiscussions)
 
 const filteredReviews = gameReviews.filter((data) =>(
-    data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
+    data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase()) || data.system.toLowerCase().includes(searchTerm.toLowerCase())
 ))
 
 const filteredGuides = gameGuides.filter((data) =>(
-  data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
+  data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase()) || data.system.toLowerCase().includes(searchTerm.toLowerCase())
 ))
 
 const filteredDiscussions = gameDiscussions.filter((data) =>(
