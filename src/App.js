@@ -41,7 +41,15 @@ const [gameDiscussions, setGameDiscussions] = useState([])
 // console.log(gameDiscussions)
 
 const filteredReviews = gameReviews.filter((data) =>(
-    data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
+    data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase()) || data.system.toLowerCase().includes(searchTerm.toLowerCase())
+))
+
+const filteredGuides = gameGuides.filter((data) =>(
+  data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase()) || data.system.toLowerCase().includes(searchTerm.toLowerCase())
+))
+
+const filteredDiscussions = gameDiscussions.filter((data) =>(
+  data.discussion.toLowerCase().includes(searchTerm.toLowerCase()) || data.author.toLowerCase().includes(searchTerm.toLowerCase()) || data.title.toLowerCase().includes(searchTerm.toLowerCase())
 ))
 
   return (
@@ -61,10 +69,10 @@ const filteredReviews = gameReviews.filter((data) =>(
        /> */}
        
        <Routes>
-        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {gameGuides} gameDiscussions ={gameDiscussions} />} />
+        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {filteredGuides} gameDiscussions ={filteredDiscussions} />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
-        <Route exact path= '/guide-list' element={<GuideList gameGuides = {gameGuides}/>}/>
-        <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={gameDiscussions} />}/>
+        <Route exact path= '/guide-list' element={<GuideList gameGuides = {filteredGuides}/>}/>
+        <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={filteredDiscussions} />}/>
         <Route exact path= '/form' element={<FormOne gameReviews={gameReviews} setGameReviews={setGameReviews} gameGuides={gameGuides} setGameGuides={setGameGuides} gameDiscussions={gameDiscussions} setGameDiscussions={setGameDiscussions}/>} />
       </Routes>
       
