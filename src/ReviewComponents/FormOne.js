@@ -443,9 +443,9 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
         <form className="form"
               onSubmit={handleSubmit}>
 
-                <label>Submission Type
+                <label className="text-white">Submission Type :
 
-                <select name="postType" 
+                <select className="text-black" name="postType" 
                 onChange={(e) => setSubmitType(e.target.value)}>
                 <option> Please Select an Option Below </option>
                 <option value="reviews">Reviews</option>
