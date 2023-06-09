@@ -40,11 +40,11 @@
   }
 
   .form {
-    @apply flex-auto items-center justify-center bg-green-600 border-2 border-double border-black border-spacing-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 ;
+    @apply flex-auto items-center justify-center bg-green-600 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 ;
   }
 
   .form-container {
-    @apply flex-col p-96 h-screen flex items-center justify-center;
+    @apply flex-col p-96 h-screen flex items-center justify-center ;
   }
 
   .text-over-image {
