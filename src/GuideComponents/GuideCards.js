@@ -3,9 +3,9 @@ import React from 'react';
 
 function GuideCards({author, socialMedia, image, gameTitle, tags, guides, developer, system, rating}){
 
-    // let mappedTags = tags.map((tag, index) => (
-    //     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
-    // ))
+    let mappedTags = tags.map((tag, index) => (
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={`${tag}-${index}`}>{tag}</span>
+    ))
     //Below is the code to add the author social media etc to the card
     // <h2 className="font-style: italic font font-semibold text-xs mb-2">{author}</h2>
     // <h3 className ="font-style: italic font font-semibold text-xs mb-2" >{socialMedia}</h3>
@@ -33,9 +33,9 @@ function GuideCards({author, socialMedia, image, gameTitle, tags, guides, develo
     
   </div> */}
 
-  {/* <div className="px-6 pt-4 pb-2">
+  <div className="px-6 pt-4 pb-2">
     {mappedTags}
-  </div> */}
+  </div>
 
 </div>
     )

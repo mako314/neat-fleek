@@ -32,12 +32,12 @@ function ReviewCards({author, socialMedia, image, gameTitle, tags, review, devel
     <h2 className="font-style: italic font font-semibold text-xs mb-2">{author}</h2>
     <h3 className ="font-style: italic font font-semibold text-xs mb-2" >{socialMedia}</h3>
     <p className="text-gray-700 text-base">
-        Review Content Here{/* {review} */}
+       {review}
     </p>
   </div>
 
   <div className="px-6 pt-4 pb-2">
-    {/* {mappedTags} */}
+    {mappedTags}
   </div>
 
 </div>
