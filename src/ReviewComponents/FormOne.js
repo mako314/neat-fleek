@@ -103,28 +103,28 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
 
 
     const reviewForm = (
-        <>
-            <label> Author: 
+        <div data-modal-target="popup-modal" data-modal-toggle="popup-modal" >
+            <label className="text-black"> Author: 
                 <input type="text" name="name" placeholder="name"/>
             </label>
             
-            <label>
+            <label className="text-black">
                 Game Title
                 <input type="text" name="title" placeholder="title"/>
             </label>
 
-            <label>
+            <label className="text-black">
                 Image
                 <input type="text" name="image" placeholder="image link"/>
             </label>
 
-            <label>
+            <label className="text-black">
                 Developer
                 <input type="text" name="developer" placeholder="developer"/>
             </label>
-            <label>
+            <label className="text-black">
                 Select a System:
-                <select name="systems">
+                <select classname="text-black" name="systems">
                     <option value="PC"> PC </option>
                     <option value="PlayStation"> PlayStation 5 </option>
                     <option value="Xbox"> Xbox Series X|S </option>
@@ -135,149 +135,149 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
             {/* Tag stuff  I'd ideally like to change the values to something capitalized, at least the first letter, yes I know it's a mess.
             Possibly change onChange to an onClick, because atm you can click an infinite amount of times.
             */}
-            <label>
+            <label className="text-black">
 
                 Tags, Check all that apply:
 
-                <label>
+                <label className="text-black">
                 Single Player
                 <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Multiplayer
                 <input type= "radio" name="multiplayer" value="multiplayer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Role Playing 
                 <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Puzzlers and Party
                 <input type= "radio" name="puzzlers-and-party" value="puzzlers-and-party" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Shooter
                 <input type= "radio" name="shooters" value="shooters" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Sports
                 <input type= "radio" name="sports" value="sports" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
                 
-                <label>
+                <label className="text-black">
                 Simulation
                 <input type= "radio" name="simulation" value="simulation" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Strategy
                 <input type= "radio" name="strategy" value="strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Action
                 <input type= "radio" name="action" value="action" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
                 
-                <label>
+                <label className="text-black">
                 Adventure
                 <input type= "radio" name="adventure" value="adventure" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Openworld
                 <input type= "radio" name="open-world" value="open-world" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Sandbox
                 <input type= "radio" name="sandbox" value="sandbox" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Real-time Strategy
                 <input type= "radio" name="real-time-strategy" value="real-time-strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Multiplayer Online Battle Arena 
                 <input type= "radio" name="multiplayer-online-battle-arena" value="moba" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Platformer
                 <input type= "radio" name="platformer" value="platformer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Survival and Horror
                 <input type= "radio" name="survival-and-horror" value="survival-and-horror" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Battle Royale
                 <input type= "radio" name="battle-royale" value="battle-royale" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Fighting
                 <input type= "radio" name="fighting" value="fighting" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
             </label>
 
-            <label> Rating: </label>
+            <label className="text-black"> Rating: </label>
                 <input type="text" name="rating" placeholder="Rating"/>
 
-            <label>
+            <label className="text-black">
                 Review
                 <textarea
                     name="review"
-                    defaultValue="Review"
+                    defaultValue=""
                     rows={4}
                     cols={40}
                 />
             </label>
 
-            <label>
+            <label className="text-black">
                 Social Media Links
                 <input type="text" name="socialmedia" placeholder="social-media"/>
             </label>
             {/* this button needs to be pressed twice */}
             <button className="bg-red-700" type="submit"> SUBMIT BUTTON </button>
 
-        </>
+        </div>
     )
 
     const guideForm = (
         <>
-             <label> CHANGE THIS BACK TO AUTHOR BUT ATM THIS IS GUIDES: 
+             <label className="text-black"> CHANGE THIS BACK TO AUTHOR BUT ATM THIS IS GUIDES: 
                 <input type="text" name="name" placeholder="name"/>
             </label>
             
-            <label>
+            <label className="text-black">
                 Game Title
                 <input type="text" name="title" placeholder="title"/>
             </label>
 
-            <label>
+            <label className="text-black">
                 Image
                 <input type="text" name="image" placeholder="image link"/>
             </label>
 
-            <label>
+            <label className="text-black">
                 Developer
                 <input type="text" name="developer" placeholder="developer"/>
             </label>
-            <label>
+            <label className="text-black">
                 Select a System:
                 <select name="systems">
-                    <option value="PC"> PC </option>
+                    <option className="text-black" value="PC"> PC </option>
                     <option value="PlayStation"> PlayStation 5 </option>
                     <option value="Xbox"> Xbox Series X|S </option>
                     <option value="Nintendo"> Nintendo Switch </option>
@@ -285,106 +285,106 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
             </label>
 
             {/* tag stuff prone to change */}
-            <label>
+            <label className="text-black">
 
                 Tags, Check all that apply:
 
-                <label>
+                <label className="text-black">
                 Single Player
                 <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Multiplayer
                 <input type= "radio" name="multiplayer" value="multiplayer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Role Playing 
                 <input type= "radio" name="role-playing" value="role-playing" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Puzzlers and Party
                 <input type= "radio" name="puzzlers-and-party" value="puzzlers-and-party" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Shooter
                 <input type= "radio" name="shooters" value="shooters" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Sports
                 <input type= "radio" name="sports" value="sports" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
                 
-                <label>
+                <label className="text-black">
                 Simulation
                 <input type= "radio" name="simulation" value="simulation" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Strategy
                 <input type= "radio" name="strategy" value="strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Action
                 <input type= "radio" name="action" value="action" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
                 
-                <label>
+                <label className="text-black">
                 Adventure
                 <input type= "radio" name="adventure" value="adventure" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Openworld
                 <input type= "radio" name="open-world" value="open-world" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Sandbox
                 <input type= "radio" name="sandbox" value="sandbox" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Real-time Strategy
                 <input type= "radio" name="real-time-strategy" value="real-time-strategy" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Multiplayer Online Battle Arena 
                 <input type= "radio" name="multiplayer-online-battle-arena" value="moba" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Platformer
                 <input type= "radio" name="platformer" value="platformer" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Survival and Horror
                 <input type= "radio" name="survival-and-horror" value="survival-and-horror" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Battle Royale
                 <input type= "radio" name="battle-royale" value="battle-royale" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
-                <label>
+                <label className="text-black">
                 Fighting
                 <input type= "radio" name="fighting" value="fighting" onChange={(e) => setTagSubmission([...tagSubmission, e.target.value])}/>
                 </label>
 
             </label>
 
-            <label> Rating: </label>
+            <label className="text-black"> Rating: </label>
                 <input type="text" name="rating" placeholder="Rating"/>
 
-            <label>
+            <label className="text-black">
                 Guide
                 <textarea
                     name="guide"
@@ -394,7 +394,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
                 />
             </label>
 
-            <label>
+            <label className="text-black">
                 Social Media Links
                 <input type="text" name="socialmedia" placeholder="social-media"/>
             </label>
@@ -408,22 +408,22 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
     const discussionForm = (
 
        <>
-        <label> 
+        <label className="text-black"> 
             Author: 
             <input type="text" name="name" placeholder="name"/>
          </label>
 
-        <label>
+        <label className="text-black">
             Title
             <input type="text" name="title" placeholder="title"/>
         </label>
 
-        <label>
+        <label className="text-black">
             Social Media Links
             <input type="text" name="socialmedia" placeholder="social-media"/>
         </label>
 
-       <label>
+       <label className="text-black">
          Discussion
         <textarea
             name="discussion"
@@ -432,7 +432,7 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
             cols={40}
             />
       </label>   
-      <button className="bg-red-700" type="submit"> SUBMIT BUTTON </button>
+      <button type="submit"> SUBMIT BUTTON </button>
       </>
     )
 
@@ -443,7 +443,8 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
         <form className="form"
               onSubmit={handleSubmit}>
 
-                <label className="text-white">Submission Type :
+                <label className="text-white">
+                    <label data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="text">Submission Form</label>
 
                 <select className="text-black" name="postType" 
                 onChange={(e) => setSubmitType(e.target.value)}>
@@ -465,3 +466,5 @@ function FormOne({gameReviews, setGameReviews, gameGuides, setGameGuides, gameDi
 }
 
 export default FormOne;
+
+// data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"

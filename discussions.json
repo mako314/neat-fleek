@@ -20,7 +20,7 @@
       "socialMedia": "@HenryRoyale",
       "title": "Apex Legends vs. Fortnite: Battle Royale Rivalry",
       "discussion": "Let's dive into the intense competition between Apex Legends and Fortnite, two giants in the battle royale genre. Personally, I find Apex Legends to be the superior game. Its fast-paced gameplay, unique character abilities, and fluid movement mechanics create an exhilarating experience. The game's focus on team dynamics and strategic decision-making adds depth to each match. On the other hand, Fortnite's building mechanics and vibrant, ever-changing world offer a different kind of gameplay. Its massive player base and frequent updates make it a cultural phenomenon. Which game captures your heart? Are you drawn to Apex Legends' intense gunplay and hero-based gameplay or Fortnite's creative building and evolving world? Share your thoughts and let's discuss this epic rivalry!"
-    },   
+    },
     {
       "id": 4,
       "author": "Alexander Reed",
@@ -34,6 +34,13 @@
       "socialMedia": "@VirtualVagabond",
       "title": "Red Dead Redemption 2 vs. GTA 5: An Epic Showdown",
       "discussion": "The eternal debate of Red Dead Redemption 2 (RDR2) versus Grand Theft Auto 5 (GTA 5) continues! Personally, I believe RDR2 takes the crown. Its immersive narrative, rich characters, and moral dilemmas create an unforgettable experience. The meticulously crafted world of the American frontier adds to its charm. While GTA 5 offers boundless freedom and a satirical take on modern American culture, RDR2's depth and emotional connections make it a true masterpiece. What are your thoughts? Which game do you prefer, and why? Let's discuss this epic showdown!"
+    },
+    {
+      "author": "",
+      "socialMedia": "",
+      "title": "",
+      "discussion": "Discussion",
+      "id": 6
     }
   ]
 }
