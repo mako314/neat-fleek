@@ -44,6 +44,10 @@ const filteredReviews = gameReviews.filter((data) =>(
     data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
 ))
 
+const filteredGuides = gameGuides.filter((data) =>(
+  data.gameTitle.toLowerCase().includes(searchTerm.toLowerCase())
+))
+
   return (
     <div className="bg-main">
       <nav className="navbar">
@@ -61,9 +65,9 @@ const filteredReviews = gameReviews.filter((data) =>(
        /> */}
        
        <Routes>
-        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {gameGuides} gameDiscussions ={gameDiscussions} />} />
+        <Route path = '/' element= {<Home filteredReviews={filteredReviews} gameGuides = {filteredGuides} gameDiscussions ={gameDiscussions} />} />
         <Route exact path = '/review-list' element= {<ReviewList gameReviews={filteredReviews}/>}/>
-        <Route exact path= '/guide-list' element={<GuideList gameGuides = {gameGuides}/>}/>
+        <Route exact path= '/guide-list' element={<GuideList gameGuides = {filteredGuides}/>}/>
         <Route exact path= '/discussionslist' element={<DiscussionList gameDiscussions ={gameDiscussions} />}/>
         <Route exact path= '/form' element={<FormOne gameReviews={gameReviews} setGameReviews={setGameReviews} gameGuides={gameGuides} setGameGuides={setGameGuides} gameDiscussions={gameDiscussions} setGameDiscussions={setGameDiscussions}/>} />
       </Routes>
